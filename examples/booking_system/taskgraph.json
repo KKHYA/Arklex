@@ -1,0 +1,1018 @@
+{
+    "nodes": [
+        [
+            "0",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Hello! I'm your Booking Assistant. How can I assist you in booking tickets today? I can provide details on events, venues, and ticket availability, and even suggest recommendations based on your preferences.",
+                    "task": "start message",
+                    "directed": false
+                },
+                "limit": 1,
+                "type": "start"
+            }
+        ],
+        [
+            "1",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Could you please specify your show preferences, such as genre, date, or location?",
+                    "task": "Prompt the user to specify their show preferences, such as genre, preferred date, or location, to provide tailored recommendations.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "2",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "user_preference-based_show_recommendations"
+                },
+                "attribute": {
+                    "value": "24",
+                    "task": "Use the user_preference-based_show_recommendations subtask to match their preferences with available shows and provide a list of recommended shows.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "3",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "event_and_show_information_retrieval"
+                },
+                "attribute": {
+                    "value": "27",
+                    "task": "Ask if the user needs more information about a specific show or details regarding venue and availability using the event_and_show_information_retrieval subtask.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "4",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "ticket_purchase_assistance"
+                },
+                "attribute": {
+                    "value": "32",
+                    "task": "Facilitate the ticket booking process by guiding the user to select a show, choose seats, and complete the purchase using the ticket_purchase_assistance subtask.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "5",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "membership_and_discount_guidance"
+                },
+                "attribute": {
+                    "value": "35",
+                    "task": "Inform the user about membership options and applicable discounts, using the membership_and_discount_guidance subtask, as the final step of the purchase process.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "6",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "event_and_show_information_retrieval"
+                },
+                "attribute": {
+                    "value": "27",
+                    "task": "Provide details about the timing and schedule of various shows",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "7",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "event_and_show_information_retrieval"
+                },
+                "attribute": {
+                    "value": "27",
+                    "task": "Deliver information about the venue, including location and accessibility features",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "8",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "What are your preferences and interests when it comes to shows? For instance, any preferred genre, location, or time?",
+                    "task": "Ask the user about their preferences and interests for shows, such as genre, location, or time.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "9",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "user_preference-based_show_recommendations"
+                },
+                "attribute": {
+                    "value": "24",
+                    "task": "Use user_preference-based_show_recommendations to find shows that match the user's preferences.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "10",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "event_and_show_information_retrieval"
+                },
+                "attribute": {
+                    "value": "27",
+                    "task": "Provide the user with a list of recommended shows and include information such as show details and timing using event_and_show_information_retrieval.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "11",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Are you interested in any of these recommended shows, or would you like additional options?",
+                    "task": "Ask the user if they are interested in any of the recommended shows or if they want additional options.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "12",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "ticket_purchase_assistance"
+                },
+                "attribute": {
+                    "value": "32",
+                    "task": "If the user is interested in a show, offer ticket_purchase_assistance to help them book a ticket or ask if they have any further questions or need assistance with discounts using membership_and_discount_guidance.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "13",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "event_and_show_information_retrieval"
+                },
+                "attribute": {
+                    "value": "27",
+                    "task": "Provide real-time updates on ticket availability for specific shows",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "14",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Are you interested in learning more about our membership options and the benefits they offer?",
+                    "task": "Initiate conversation to ask the user if they are interested in learning more about membership options and the benefits associated with them.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "15",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "membership_and_discount_guidance"
+                },
+                "attribute": {
+                    "value": "35",
+                    "task": "Provide information about the types of memberships available, along with the discounts and special offers they can avail.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "16",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Are you interested in joining a specific membership, or do you need more details about any particular option?",
+                    "task": "Ask the user if they are interested in joining a specific membership or if they need more details about any particular option.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "17",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "membership_and_discount_guidance"
+                },
+                "attribute": {
+                    "value": "35",
+                    "task": "Guide the user through the process of joining the membership, including how to complete any necessary forms or payment if applicable.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "18",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Congratulations on successfully joining the membership! Here's how you can utilize your discounts on future bookings.",
+                    "task": "Confirm that the user has successfully joined the membership and provide information on how to utilize their discounts on future bookings.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "19",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "We currently have special events and discounts on tickets available! Would you like to know more?",
+                    "task": "Use the MessageWorker to inform the user about any current special events or discounts on tickets.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "20",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "membership_and_discount_guidance"
+                },
+                "attribute": {
+                    "value": "35",
+                    "task": "Invoke the membership_and_discount_guidance subtask to provide more details about the discounts and how users can avail of them.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "21",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Do you have any preferences or interests in specific events or types of shows?",
+                    "task": "Ask the user if they have any preferences or interests in specific events or types of shows using the MessageWorker.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "22",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "user_preference-based_show_recommendations"
+                },
+                "attribute": {
+                    "value": "24",
+                    "task": "Use the user_preference-based_show_recommendations subtask to recommend shows based on the user's interests and preferences.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "23",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "ticket_purchase_assistance"
+                },
+                "attribute": {
+                    "value": "32",
+                    "task": "Offer additional assistance, such as providing detailed information about a show or helping with the ticket purchase process using the ticket_purchase_assistance subtask.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "24",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "What are your interests or preferences when it comes to shows?",
+                    "task": "Ask user for their preferences or interests related to shows.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "25",
+            {
+                "resource": {
+                    "id": "ddbe6adc-cd0e-40bc-8a95-91cb69ed807b",
+                    "name": "booking_db-search_show-search_show"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Map user preferences with currently available shows.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "26",
+            {
+                "resource": {
+                    "id": "9c15af81-04b3-443e-be04-a3522124b905",
+                    "name": "DataBaseWorker"
+                },
+                "attribute": {
+                    "value": "Based on your preferences, here are some shows you might like.",
+                    "task": "Generate a list of recommended shows based on the user's preferences.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "27",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "What would you like to know about the event? Timings, venue, ticket availability, or special events?",
+                    "task": "Identify user query related to event details.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "28",
+            {
+                "resource": {
+                    "id": "ddbe6adc-cd0e-40bc-8a95-91cb69ed807b",
+                    "name": "booking_db-search_show-search_show"
+                },
+                "attribute": {
+                    "value": "Here is the schedule for the show you are interested in.",
+                    "task": "If the query is about show schedules, retrieve and present the timing and schedule of the specified show.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "29",
+            {
+                "resource": {
+                    "id": "9c15af81-04b3-443e-be04-a3522124b905",
+                    "name": "DataBaseWorker"
+                },
+                "attribute": {
+                    "value": "The venue is located at [Location]. It offers features such as [accessibility features].",
+                    "task": "If the query is about venue information, retrieve and deliver details about the venue, including location and accessibility features.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "30",
+            {
+                "resource": {
+                    "id": "2a2750cb-6226-4068-ba05-a4db83da3e16",
+                    "name": "booking_db-check_booking-check_booking"
+                },
+                "attribute": {
+                    "value": "There are currently [number] tickets available for the show.",
+                    "task": "If the query is about ticket availability, check real-time availability of tickets for the specific show.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "31",
+            {
+                "resource": {
+                    "id": "9c15af81-04b3-443e-be04-a3522124b905",
+                    "name": "DataBaseWorker"
+                },
+                "attribute": {
+                    "value": "We currently have a discount of [percentage] on tickets for the following shows: [list of shows].",
+                    "task": "If the query is about special events or discounts, fetch details about any current special events or discounts on tickets.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "32",
+            {
+                "resource": {
+                    "id": "ddbe6adc-cd0e-40bc-8a95-91cb69ed807b",
+                    "name": "booking_db-search_show-search_show"
+                },
+                "attribute": {
+                    "value": "Let me help you find the show you're interested in. Could you please provide the name or a description?",
+                    "task": "Assist the user in locating a desired show.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "33",
+            {
+                "resource": {
+                    "id": "9c15af81-04b3-443e-be04-a3522124b905",
+                    "name": "DataBaseWorker"
+                },
+                "attribute": {
+                    "value": "Please select your preferred seats from the available options.",
+                    "task": "Guide the user through seat selection for the chosen show.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "34",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Let's proceed with your payment to complete the ticket purchase.",
+                    "task": "Process the payment transaction to complete ticket purchase.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "35",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Are you interested in knowing about our membership benefits or the available discounts?",
+                    "task": "Identify if the user wants to know about membership or discounts.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "36",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "You can join our membership by visiting our website or contacting our support team. As a member, you will enjoy exclusive discounts and special offers.",
+                    "task": "If interested in membership, guide the user on how to join or purchase a membership for discounts and special offers.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "37",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Currently, we have a special offer where members get 20% off on tickets. Would you like to know more about our membership?",
+                    "task": "If inquiring about discounts, provide information on current ticket discounts available as part of the membership or special offers.",
+                    "directed": false
+                }
+            }
+        ]
+    ],
+    "edges": [
+        [
+            "0",
+            "1",
+            {
+                "intent": "User wants to book tickets for a show",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "1",
+            "2",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "2",
+            "3",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "3",
+            "4",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "4",
+            "5",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "6",
+            {
+                "intent": "User seeks information about show schedules",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "7",
+            {
+                "intent": "User asks for venue information",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "8",
+            {
+                "intent": "User is uncertain about show selection",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "8",
+            "9",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "9",
+            "10",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "10",
+            "11",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "11",
+            "12",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "13",
+            {
+                "intent": "User inquires about ticket availability",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "14",
+            {
+                "intent": "User wants to join or purchase membership",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "14",
+            "15",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "15",
+            "16",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "16",
+            "17",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "17",
+            "18",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "19",
+            {
+                "intent": "User wants to know special events or discounts offered",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "19",
+            "20",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "20",
+            "21",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "21",
+            "22",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "22",
+            "23",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "24",
+            "25",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "25",
+            "26",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "27",
+            "28",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "27",
+            "29",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "27",
+            "30",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "27",
+            "31",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "32",
+            "33",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "33",
+            "34",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "35",
+            "36",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "35",
+            "37",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ]
+    ],
+    "role": "booking assistant",
+    "user_objective": "The booking assistant helps users book tickets for the show. It can provide information about events, venues, and ticket availability, as well as help users complete the booking process. It can also provide recommendations based on user preferences.",
+    "builder_objective": "The booking assistant ask for user feedback at the end of the conversation.",
+    "domain": "Theatre",
+    "intro": "The mission of Irish Repertory Theatre is to provide a context for understanding the contemporary Irish-American experience through evocative works of theater, music, and dance. This mission is accomplished by staging the works of Irish and Irish-American classic and contemporary playwrights, encouraging the development of new works focused on the Irish and Irish-American experience, and producing the works of other cultures interpreted through the lens of an Irish sensibility.",
+    "task_docs": [
+        {
+            "source": "https://irishrep.org/",
+            "type": "url",
+            "num": 20
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        {
+            "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+            "name": "MessageWorker",
+            "path": "message_worker.py"
+        },
+        {
+            "id": "9c15af81-04b3-443e-be04-a3522124b905",
+            "name": "DataBaseWorker",
+            "path": "database_worker.py"
+        }
+    ],
+    "tools": [
+        {
+            "id": "ddbe6adc-cd0e-40bc-8a95-91cb69ed807b",
+            "name": "search_show",
+            "path": "booking_db/search_show.py"
+        },
+        {
+            "id": "b9dbef8b-8219-4e0a-a50d-3b01614e5443",
+            "name": "book_show",
+            "path": "booking_db/book_show.py"
+        },
+        {
+            "id": "2a2750cb-6226-4068-ba05-a4db83da3e16",
+            "name": "check_booking",
+            "path": "booking_db/check_booking.py"
+        },
+        {
+            "id": "6b5d95df-1106-4044-a202-8fd38cef4d0e",
+            "name": "cancel_booking",
+            "path": "booking_db/cancel_booking.py"
+        }
+    ],
+    "nluapi": "",
+    "slotfillapi": ""
+}

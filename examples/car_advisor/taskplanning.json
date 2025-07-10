@@ -1,0 +1,71 @@
+[
+    {
+        "task_name": "Provide tailored vehicle recommendations based on user preferences and needs",
+        "steps": [
+            "Gather comprehensive information about the user's automotive preferences and needs, including vehicle type, preferred features, budget, and financing options using the gather_user_preferences_and_needs resource.",
+            "Utilize the CarAdvisorWorker to analyze the collected preferences and coordinate database queries via CarDatabaseWorker to generate tailored automotive recommendations.",
+            "Perform market analysis and generate insights on the recommended vehicles using perform_market_analysis_and_insight_generation to provide the user with market trends and pricing information.",
+            "Check with the user if they require assistance in connecting with local dealers or if they need more information on the recommended vehicles.",
+            "Facilitate a connection with local dealers by using the connect_with_local_dealers resource to arrange appointments, set up test drives, or provide dealer contact information as per the user's preference."
+        ]
+    },
+    {
+        "task_name": "Provide automotive market analysis and industry insights",
+        "steps": [
+            "Gather user preferences and needs, such as vehicle type, preferred features, budget, and financing options.",
+            "Perform market analysis and generate insights based on user preferences using real-time market intelligence and data from the company's internal documentation.",
+            "Provide the user with analysis, industry insights, and trends relevant to their preferences.",
+            "Ask if the user would like to compare specific car models or needs more detailed specifications.",
+            "Offer to connect with local dealers or provide additional help with any other automotive service needs."
+        ]
+    },
+    {
+        "task_name": "Offer guidance on vehicle pricing, financing options, and payment estimation",
+        "steps": [
+            "Gather comprehensive information about the user's automotive preferences and needs, including vehicle type, preferred features, budget, and financing options.",
+            "Use the CarDatabaseWorker to retrieve potential vehicle options that match the user's criteria.",
+            "Perform market analysis and insight generation using the market_intelligence tool to provide users with current market trends, vehicle price trends, and financing options based on their preferences.",
+            "Present the user with findings and vehicle options and ask if they have specific preferences or if they want to explore further options.",
+            "If the user has selected a vehicle, confirm the selection and provide guidance on pricing, financing options, and payment estimation.",
+            "Offer to facilitate any additional steps the user wishes to take, such as connecting with local dealers for test drives or finalizing financing details.",
+            "Conclude the interaction by ensuring the user doesn't need further assistance and provide a summary of the next steps or decisions made."
+        ]
+    },
+    {
+        "task_name": "Provide updates and tracking information on vehicle delivery status",
+        "steps": [
+            "Provide updates and tracking information on vehicle delivery status"
+        ]
+    },
+    {
+        "task_name": "Assist in connecting users with local car dealerships",
+        "steps": [
+            "Gather comprehensive information about the user's automotive preferences and needs, such as vehicle type, preferred features, budget, and financing options.",
+            "Analyze the user's preferences using CarAdvisorWorker to provide personalized automotive recommendations and insights.",
+            "Perform market analysis and offer insights about current automotive market trends and the best vehicle options that match the user's needs.",
+            "Facilitate a connection with local car dealerships by identifying nearby dealers, using car_tools-dealer_contact to provide contact information, location data, and set up appointments or test drives.",
+            "Confirm with the user if they need further assistance or are ready to proceed with the dealership connections and provide necessary instructions or support."
+        ]
+    },
+    {
+        "task_name": "Offer assistance with automotive repair services and scheduling",
+        "steps": [
+            "Gather comprehensive information about the user's automotive preferences and needs, such as vehicle type, preferred features, budget, and financing options, using the 'gather_user_preferences_and_needs' resource.",
+            "Analyze user preferences and coordinate database queries to provide personalized automotive repair recommendations using the 'CarAdvisorWorker'.",
+            "Use 'troubleshooting_and_issue_resolution' to assist users with any automotive issues, suggesting troubleshooting steps or arranging repair services.",
+            "Facilitate connecting the user with local dealers for repair services if needed by using the 'connect_with_local_dealers'.",
+            "Utilize 'CarDatabaseWorker' to handle any vehicle search or dealer management related queries if additional information is required.",
+            "Confirm with the user if there are any other services or assistance they need and conclude the interaction."
+        ]
+    },
+    {
+        "task_name": "Provide troubleshooting advice and solutions for automotive issues",
+        "steps": [
+            "Inquire about the specific automotive issue the user is experiencing and gather detailed information about the user's vehicle type and preferences.",
+            "Provide initial troubleshooting steps based on internal documentation to address the specific issue described by the user.",
+            "Ask the user if the initial troubleshooting steps resolved their issue or if further assistance is required.",
+            "If further help is needed, perform a real-time search for additional troubleshooting advice or coordinate with local repair services.",
+            "Confirm the resolution of the issue or provide information on next steps such as arranging a repair service."
+        ]
+    }
+]

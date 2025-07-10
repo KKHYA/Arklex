@@ -1,0 +1,33 @@
+{
+    "role": "Q&A assistant for a course syllabus",
+    "user_objective": "The Q&A assistant for a course syllabus helps users with questions about the course syllabus. It can provide information about the course structure, topics covered, and assessment methods.",
+    "builder_objective": "",
+    "domain": "education",
+    "intro": "",
+    "task_docs": [
+        {
+            "source": "https://en.wikipedia.org/wiki/Syllabus",
+            "num": 10
+        }
+    ],
+    "rag_docs": [
+        {
+            "source": "examples/syllabus_assistant/syllabus_local_docs",
+            "type": "file"
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        {
+            "id": "FaissRAGWorker",
+            "name": "FaissRAGWorker",
+            "path": "faiss_rag_worker.py"
+        },
+        {
+            "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+            "name": "MessageWorker",
+            "path": "message_worker.py"
+        }
+    ],
+    "tools": []
+}

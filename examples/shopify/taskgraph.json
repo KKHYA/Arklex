@@ -1,0 +1,528 @@
+{
+    "edges": [
+        [
+            "0",
+            "1",
+            {
+                "intent": "Questions about general customer service",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "2",
+            {
+                "intent": "Question about account information (shipping address/user details)",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "3",
+            {
+                "intent": "Search for products or ask for recommendation",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "4",
+            {
+                "intent": "Ask for detailed product information",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "5",
+            {
+                "intent": "Ask about past orders",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "6",
+            {
+                "intent": "Return products or cancel order",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "6",
+            "7",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "7",
+            "8",
+            {
+                "intent": "choose the order to be returned",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "7",
+            "9",
+            {
+                "intent": "choose the order to be canceled",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "10",
+            {
+                "intent": "Ask for items in the shopping cart or checkout url",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "11",
+            {
+                "intent": "Ask for a specific product info (on a web page or refer it as 'this')",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "12",
+            {
+                "intent": "Add items to the shopping cart",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "12",
+            "13",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "13",
+            "14",
+            {
+                "intent": "choose the product to be added to the shopping cart",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ]
+    ],
+    "nodes": [
+        [
+            "0",
+            {
+                "resource": {
+                    "id": "MessageWorker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Hello! Welcome to our shop! We’re so excited to have you here! Do you need any recommendations?",
+                    "task": "start message",
+                    "directed": false
+                },
+                "limit": 10,
+                "type": "start"
+            }
+        ],
+        [
+            "1",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Answer user's question about general customer service",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ],
+        [
+            "2",
+            {
+                "resource": {
+                    "id": "55011bc1-2a55-4e21-bf39-e9624729c8d8",
+                    "name": "get_user_details_admin"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Find user details by id",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ],
+        [
+            "3",
+            {
+                "resource": {
+                    "id": "2b275abc-6226-2013-ba05-t4ab83daalc3",
+                    "name": "search_products"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Get information of products based on query",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ],
+        [
+            "4",
+            {
+                "resource": {
+                    "id": "22fae76f-085c-4098-9011-2ae1e1eb8dc3",
+                    "name": "get_products"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Get products info based on ids",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ],
+        [
+            "5",
+            {
+                "resource": {
+                    "id": "2a2750cb-6226-4068-ba05-a4db83da3e16",
+                    "name": "get_order_details"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Get the info for each order",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ],
+        [
+            "6",
+            {
+                "resource": {
+                    "id": "2a2750cb-6226-4068-ba05-a4db83da3e16",
+                    "name": "get_order_details"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Get the info for each order",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ],
+        [
+            "7",
+            {
+                "resource": {
+                    "id": "MessageWorker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Please confirm that you want to return or cancel the order with the order information",
+                    "task": "Ask user to confirm the order to be returned or canceled",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ],
+        [
+            "8",
+            {
+                "resource": {
+                    "id": "alfse0ls-lx4f-a01m-1mch-a4dfsl010end",
+                    "name": "return_products"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Submit the return request after user confirms the product to be returned",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ],
+        [
+            "9",
+            {
+                "resource": {
+                    "id": "alla05l2-3kd1-x9iw-10k3-algk3xenfsl9",
+                    "name": "cancel_order"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Cancel the order after user confirms the order to be canceled",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ],
+        [
+            "10",
+            {
+                "resource": {
+                    "id": "alfseal2-al94-2kdq-slci-aldjcjenfead",
+                    "name": "get_cart"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Get items and checkout url in the user's shopping cart",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ],
+        [
+            "11",
+            {
+                "resource": {
+                    "id": "xl34e76f-025c-4xl2-0s2j-l4e1eal2naak",
+                    "name": "get_web_product"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Get product info of based on product id",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ],
+        [
+            "12",
+            {
+                "resource": {
+                    "id": "22fae76f-085c-4098-9011-2ae1e1eb8dc3",
+                    "name": "get_products"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Get products info based on ids",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ],
+        [
+            "13",
+            {
+                "resource": {
+                    "id": "MessageWorker",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Please confirm the information of the product variant which you would like to add to your shopping cart.",
+                    "task": "Confirm the product variant that the user wants to add to the shopping cart",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ],
+        [
+            "14",
+            {
+                "resource": {
+                    "id": "2alak3db-sl36-4zk9-aa35-a4dlkfm3se16",
+                    "name": "cart_add_items"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Add items to the user's shopping cart after user confirms the item to be added.",
+                    "direct": false
+                },
+                "limit": 10
+            }
+        ]
+    ],
+    "tools": [
+        {
+            "id": "55011bc1-2a55-4e21-bf39-e9624729c8d8",
+            "name": "get_user_details_admin",
+            "path": "shopify/get_user_details_admin.py",
+            "fixed_args": {
+                "admin_token": "<shopify_admin_token>",
+                "shop_url": "<your-shopify-shop-url>",
+                "api_version": "2024-10"
+            }
+        },
+        {
+            "id": "2b275abc-6226-2013-ba05-t4ab83daalc3",
+            "name": "search_products",
+            "path": "shopify/search_products.py",
+            "fixed_args": {
+                "admin_token": "<shopify_admin_token>",
+                "shop_url": "<your-shopify-shop-url>",
+                "api_version": "2024-10"
+            }
+        },
+        {
+            "id": "2a2750cb-6226-4068-ba05-a4db83da3e16",
+            "name": "get_order_details",
+            "path": "shopify/get_order_details.py",
+            "fixed_args": {
+                "admin_token": "<shopify_admin_token>",
+                "shop_url": "<your-shopify-shop-url>",
+                "api_version": "2024-10"
+            }
+        },
+        {
+            "id": "22fae76f-085c-4098-9011-2ae1e1eb8dc3",
+            "name": "get_products",
+            "path": "shopify/get_products.py",
+            "fixed_args": {
+                "admin_token": "<shopify_admin_token>",
+                "shop_url": "<your-shopify-shop-url>",
+                "api_version": "2024-10"
+            }
+        },
+        {
+            "id": "xl34e76f-025c-4xl2-0s2j-l4e1eal2naak",
+            "name": "get_web_product",
+            "path": "shopify/get_web_product.py",
+            "fixed_args": {
+                "admin_token": "<shopify_admin_token>",
+                "shop_url": "<your-shopify-shop-url>",
+                "api_version": "2024-10"
+            }
+        },
+        {
+            "id": "alfse0ls-lx4f-a01m-1mch-a4dfsl010end",
+            "name": "return_products",
+            "path": "shopify/return_products.py",
+            "fixed_args": {
+                "admin_token": "<shopify_admin_token>",
+                "shop_url": "<your-shopify-shop-url>",
+                "api_version": "2024-10"
+            }
+        },
+        {
+            "id": "alla05l2-3kd1-x9iw-10k3-algk3xenfsl9",
+            "name": "cancel_order",
+            "path": "shopify/cancel_order.py",
+            "fixed_args": {
+                "admin_token": "<shopify_admin_token>",
+                "shop_url": "<your-shopify-shop-url>",
+                "api_version": "2024-10"
+            }
+        },
+        {
+            "id": "alfseal2-al94-2kdq-slci-aldjcjenfead",
+            "name": "get_cart",
+            "path": "shopify/get_cart.py",
+            "fixed_args": {
+                "storefront_token": "<shopify_storefront_token>",
+                "shop_url": "<your-shopify-shop-url>",
+                "api_version": "2024-10"
+            }
+        },
+        {
+            "id": "2alak3db-sl36-4zk9-aa35-a4dlkfm3se16",
+            "name": "cart_add_items",
+            "path": "shopify/cart_add_items.py",
+            "fixed_args": {
+                "storefront_token": "<shopify_storefront_token>",
+                "shop_url": "<your-shopify-shop-url>",
+                "api_version": "2024-10"
+            }
+        }
+    ],
+    "workers": [
+        {
+            "id": "FaissRAGWorker",
+            "name": "FaissRAGWorker",
+            "path": "faiss_rag_worker.py"
+        },
+        {
+            "id": "MessageWorker",
+            "name": "MessageWorker",
+            "path": "message_worker.py"
+        }
+    ],
+    "role": "customer service assistant",
+    "user_objective": "The customer service assistant helps users with customer service inquiries. It can provide information about products, services, and policies, as well as help users resolve issues and complete transactions.",
+    "builder_objective": "The customer service assistant helps to request customer's contact information.",
+    "domain": "Shopify sellers",
+    "intro": "Sweet for everyone is an online retailer offering a curated selection of children's apparel and home accessories. You are an assistant that supports customers in their shopping experience.",
+    "task_docs": [],
+    "rag_docs": [],
+    "tasks": [],
+    "nluapi": "",
+    "slotfillapi": ""
+}

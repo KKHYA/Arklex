@@ -1,0 +1,87 @@
+[
+    {
+        "goal": "asking replacement",
+        "matched_attribute": {
+            "goal": "Goal: Inquire about the process for replacing a competitor's product with Richtech Robotics' ADAM robot, considering my experience with similar products and my status as a returning customer. I am particularly interested in understanding the quality and efficiency improvements ADAM can offer for my business operations in Plano, and I would like to explore rental options within a medium budget.",
+            "product_experience_level": "used competitor product",
+            "customer_type": "returning customer",
+            "persona": "neutral",
+            "current_webpage": "product page",
+            "modality": "text",
+            "communication_type": "outgoing",
+            "discovery_type": "friend recommendation",
+            "buying_behavior": "quality oriented",
+            "budget": "medium budget",
+            "purchase_history": "single purchase",
+            "location": "Plano"
+        }
+    },
+    {
+        "goal": "asking for refund",
+        "matched_attribute": {
+            "goal": "Given your profile and the company details, here's a more specific goal for your interaction with the chatbot:\n\n\"As a returning customer from Plano who has previously rented the ADAM robot from Richtech Robotics, I would like to request a refund for my recent rental due to a delay in delivery beyond the promised two-week timeframe. I have experience with competitor products and was recommended to Richtech Robotics by a friend. My budget is limited, and I prioritize economic decisions, so I need to ensure that my rental agreement is honored as expected.\"",
+            "product_experience_level": "used competitor product",
+            "customer_type": "returning customer",
+            "persona": "neutral",
+            "current_webpage": "home page",
+            "modality": "text",
+            "communication_type": "incoming",
+            "discovery_type": "friend recommendation",
+            "buying_behavior": "economic",
+            "budget": "low budget",
+            "purchase_history": "rental agreement",
+            "location": "Plano"
+        }
+    },
+    {
+        "goal": "interested in product information",
+        "matched_attribute": {
+            "goal": "Goal: As a returning customer with experience using competitor products and a focus on economic buying behavior, I am interested in exploring detailed information about Richtech Robotics' ADAM robot, particularly its rental options and capabilities as a bartender for business purposes. Given my low budget and location in Austin, I am keen to understand how ADAM can enhance efficiency and profitability in a cost-effective manner.",
+            "product_experience_level": "used competitor product",
+            "customer_type": "returning customer",
+            "persona": "aggressive",
+            "current_webpage": "about page",
+            "modality": "text",
+            "communication_type": "outgoing",
+            "discovery_type": "social media",
+            "buying_behavior": "economic",
+            "budget": "low budget",
+            "purchase_history": "rental agreement",
+            "location": "Austin"
+        }
+    },
+    {
+        "goal": "request repair",
+        "matched_attribute": {
+            "goal": "Given your profile and the company information, here's a more specific goal for your interaction with the chatbot:\n\n\"Request urgent repair service for a rented ADAM robot bartender, emphasizing the need for quick resolution due to high customer demand at my Plano-based business. Highlight previous experience with competitor products and express dissatisfaction with current performance to ensure prompt attention.\"",
+            "product_experience_level": "used competitor product",
+            "customer_type": "returning customer",
+            "persona": "aggressive",
+            "current_webpage": "home page",
+            "modality": "text",
+            "communication_type": "incoming",
+            "discovery_type": "social media",
+            "buying_behavior": "economic",
+            "budget": "medium budget",
+            "purchase_history": "rental agreement",
+            "location": "Plano"
+        }
+    },
+    {
+        "goal": "asking replacement",
+        "matched_attribute": {
+            "goal": "Goal: Inquire about the replacement options for a Medbot delivery robot, considering my experience with a competitor's product and my status as a returning customer with a low budget. I am interested in understanding the cost-effective solutions Richtech Robotics offers for upgrading or replacing existing equipment to enhance efficiency in a healthcare setting.",
+            "product_experience_level": "used competitor product",
+            "customer_type": "returning customer",
+            "persona": "neutral",
+            "current_webpage": "home page",
+            "modality": "text",
+            "communication_type": "outgoing",
+            "discovery_type": "search engine results",
+            "buying_behavior": "economic",
+            "budget": "low budget",
+            "purchase_history": "single purchase",
+            "location": "Plano"
+        }
+    }
+]

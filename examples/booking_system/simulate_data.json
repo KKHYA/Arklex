@@ -1,0 +1,825 @@
+[
+    {
+        "id": 0,
+        "convo": [
+            {
+                "role": "user",
+                "content": "Hi, I need to talk about a refund for a group ticket purchase. The recent performance was really disappointing, especially in how it portrayed the Irish-American experience. It didn't meet the expectations I had based on other productions I've seen. Can you help with this?",
+                "intent": "others",
+                "curr_node": "0",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "planner",
+                            "name": "planner",
+                            "attribute": {
+                                "value": "",
+                                "direct": false
+                            },
+                            "node_id": "0"
+                        },
+                        "intent": "others",
+                        "input": [],
+                        "output": "",
+                        "steps": [
+                            {
+                                "context_generate": "I'm sorry to hear that the performance didn't meet your expectations. For refund inquiries, it's best to contact the box office or the customer service team directly, as they handle ticketing issues. If you have any other questions or need assistance with future bookings, feel free to let me know!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "I'm sorry to hear that the performance didn't meet your expectations. For refund inquiries, it's best to contact the box office or the customer service team directly, as they handle ticketing issues. If you have any other questions or need assistance with future bookings, feel free to let me know"
+            },
+            {
+                "role": "user",
+                "content": "I appreciate the direction, but I was hoping to resolve this here. The portrayal in the performance was really off, and given my past experiences with other theatres, I expected more. Can you at least guide me on how to escalate this issue or ensure my feedback reaches the right people?",
+                "intent": "others",
+                "curr_node": "0",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "planner",
+                            "name": "planner",
+                            "attribute": {
+                                "value": "",
+                                "direct": false
+                            },
+                            "node_id": "0"
+                        },
+                        "intent": "others",
+                        "input": [],
+                        "output": "",
+                        "steps": [
+                            {
+                                "context_generate": "I understand your concerns and it's important that your feedback is heard. While I can't process refunds directly, I recommend reaching out to the theater's customer service or box office to discuss your experience and request a refund. Additionally, you can ask them how to formally submit your feedback to ensure it reaches the appropriate team. If there's anything else I can assist you with, such as future bookings or recommendations, please let me know!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "I understand your concerns and it's important that your feedback is heard. While I can't process refunds directly, I recommend reaching out to the theater's customer service or box office to discuss your experience and request a refund. Additionally, you can ask them how to formally submit your feedback to ensure it reaches the appropriate team. If there's anything else I can assist you with, such as future bookings or recommendations, please let me know"
+            },
+            {
+                "role": "user",
+                "content": "Thanks for the advice. I'll contact the box office directly then. It's just frustrating because I expected a lot more from the performance, especially given the theatre's reputation. I'll make sure my feedback is heard. If you have any tips on how to make sure it gets the attention it deserves, I'd appreciate it.",
+                "intent": "others",
+                "curr_node": "0",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "planner",
+                            "name": "planner",
+                            "attribute": {
+                                "value": "",
+                                "direct": false
+                            },
+                            "node_id": "0"
+                        },
+                        "intent": "others",
+                        "input": [],
+                        "output": "",
+                        "steps": [
+                            {
+                                "context_generate": "You're welcome, and I completely understand your frustration. When you contact the box office or customer service, it might be helpful to clearly outline your specific concerns about the performance and how it fell short of your expectations. Mentioning your past positive experiences with the theater can also provide context for your disappointment. Additionally, you could ask if there's a formal feedback process or a specific person you can address your concerns to, which might help ensure your feedback is given the attention it deserves. If there's anything else I can do to assist you, feel free to let me know!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "You're welcome, and I completely understand your frustration. When you contact the box office or customer service, it might be helpful to clearly outline your specific concerns about the performance and how it fell short of your expectations. Mentioning your past positive experiences with the theater can also provide context for your disappointment. Additionally, you could ask if there's a formal feedback process or a specific person you can address your concerns to, which might help ensure your feedback is given the attention it deserves. If there's anything else I can do to assist you, feel free to let me know"
+            },
+            {
+                "role": "user",
+                "content": "Thank you for the tips. I'll make sure to highlight my past experiences and provide detailed feedback. Hopefully, it leads to some improvements. If I need any more help or decide to book future performances, I'll reach out. Thanks again for your assistance.",
+                "intent": "others",
+                "curr_node": "0",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "planner",
+                            "name": "planner",
+                            "attribute": {
+                                "value": "",
+                                "direct": false
+                            },
+                            "node_id": "0"
+                        },
+                        "intent": "others",
+                        "input": [],
+                        "output": "",
+                        "steps": [
+                            {
+                                "context_generate": "You're welcome! I'm glad I could help. If you have any more questions or need assistance in the future, whether it's about booking tickets or anything else, don't hesitate to reach out. Have a great day!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "You're welcome! I'm glad I could help. If you have any more questions or need assistance in the future, whether it's about booking tickets or anything else, don't hesitate to reach out. Have a great day"
+            }
+        ],
+        "profile": "Customer Profile:\n\nMeet our customer, a returning patron of the Irish Repertory Theatre, who hails from Dublin. This individual has a history of purchasing group tickets, indicating a preference for shared cultural experiences. They discovered our theatre through social media, showcasing their engagement with digital platforms to explore cultural offerings.\n\nWith a moderate budget, this customer exhibits economic buying behavior, carefully considering the value and quality of their purchases. Their previous experiences with competitor productions have set high expectations for the portrayal of the Irish-American experience, which they feel was not met in a recent performance at our theatre.\n\nCurrently visiting our product page, this customer is reaching out via text with an aggressive communication style, seeking a refund for their recent group ticket purchase. Their dissatisfaction stems from the performance's interpretation of the Irish-American narrative, which they found lacking compared to other productions they have attended.\n\nAs a theatre dedicated to presenting evocative works that resonate with the Irish and Irish-American experience, understanding and addressing this customer's concerns is crucial. Their feedback provides valuable insights into audience expectations and highlights the importance of maintaining the authenticity and depth of cultural portrayals in our productions.",
+        "goal": "Goal: Request a refund for a group ticket purchase from Irish Repertory Theatre, emphasizing dissatisfaction with the recent performance's portrayal of the Irish-American experience, which did not meet expectations based on previous experiences with competitor productions.",
+        "attributes": {
+            "goal": "Goal: Request a refund for a group ticket purchase from Irish Repertory Theatre, emphasizing dissatisfaction with the recent performance's portrayal of the Irish-American experience, which did not meet expectations based on previous experiences with competitor productions.",
+            "product_experience_level": "used competitor product",
+            "customer_type": "returning customer",
+            "persona": "aggressive",
+            "current_webpage": "product page",
+            "modality": "text",
+            "communication_type": "incoming",
+            "discovery_type": "social media",
+            "buying_behavior": "economic",
+            "budget": "moderate budget",
+            "purchase_history": "group ticket buyer",
+            "location": "Dublin"
+        },
+        "goal_completion": true
+    },
+    {
+        "id": 1,
+        "convo": [
+            {
+                "role": "user",
+                "content": "Hi there, I recently bought a ticket for a show at the Irish Repertory Theatre. Can you help me track the delivery status of it? Thanks!",
+                "intent": "others",
+                "curr_node": "0",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "planner",
+                            "name": "planner",
+                            "attribute": {
+                                "value": "",
+                                "direct": false
+                            },
+                            "node_id": "0"
+                        },
+                        "intent": "others",
+                        "input": [],
+                        "output": "",
+                        "steps": [
+                            {
+                                "context_generate": "Hi! I can help with general information about the Irish Repertory Theatre, but for tracking the delivery status of your ticket, it's best to contact the theater's box office directly. They should be able to provide you with the most accurate and up-to-date information regarding your ticket delivery. If you have any other questions or need assistance with something else, feel free to let me know!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "Hi! I can help with general information about the Irish Repertory Theatre, but for tracking the delivery status of your ticket, it's best to contact the theater's box office directly. They should be able to provide you with the most accurate and up-to-date information regarding your ticket delivery. If you have any other questions or need assistance with something else, feel free to let me know"
+            },
+            {
+                "role": "user",
+                "content": "Thanks for the info! Could you provide me with the contact details for the box office? I want to make sure everything is on track with my ticket.",
+                "intent": "others",
+                "curr_node": "0",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "planner",
+                            "name": "planner",
+                            "attribute": {
+                                "value": "",
+                                "direct": false
+                            },
+                            "node_id": "0"
+                        },
+                        "intent": "others",
+                        "input": [],
+                        "output": "",
+                        "steps": [
+                            {
+                                "context_generate": "You're welcome! To get in touch with the Irish Repertory Theatre's box office, you can visit their official website for the most accurate contact details. Typically, they provide a phone number and email address for inquiries. If you have any other questions or need further assistance, feel free to ask!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "You're welcome! To get in touch with the Irish Repertory Theatre's box office, you can visit their official website for the most accurate contact details. Typically, they provide a phone number and email address for inquiries. If you have any other questions or need further assistance, feel free to ask"
+            },
+            {
+                "role": "user",
+                "content": "Great, I'll check their website for the contact info. Thanks for your help! If I have more questions, I'll reach out.",
+                "intent": "others",
+                "curr_node": "0",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "planner",
+                            "name": "planner",
+                            "attribute": {
+                                "value": "",
+                                "direct": false
+                            },
+                            "node_id": "0"
+                        },
+                        "intent": "others",
+                        "input": [],
+                        "output": "",
+                        "steps": [
+                            {
+                                "context_generate": "You're welcome! I'm glad I could help. If you have any more questions or need further assistance in the future, feel free to reach out. Enjoy the show at the Irish Repertory Theatre! Have a great day!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "You're welcome! I'm glad I could help. If you have any more questions or need further assistance in the future, feel free to reach out. Enjoy the show at the Irish Repertory Theatre! Have a great day"
+            },
+            {
+                "role": "user",
+                "content": "Thank you! I'm really looking forward to it. Have a great day too!",
+                "intent": "others",
+                "curr_node": "0",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "planner",
+                            "name": "planner",
+                            "attribute": {
+                                "value": "",
+                                "direct": false
+                            },
+                            "node_id": "0"
+                        },
+                        "intent": "others",
+                        "input": [],
+                        "output": "",
+                        "steps": [
+                            {
+                                "context_generate": "You're welcome! If you have any more questions or need assistance in the future, don't hesitate to reach out. Enjoy the show, and have a fantastic day!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "You're welcome! If you have any more questions or need assistance in the future, don't hesitate to reach out. Enjoy the show, and have a fantastic day"
+            },
+            {
+                "role": "user",
+                "content": "Thanks again! I'll definitely reach out if I need anything else. Take care!",
+                "intent": "others",
+                "curr_node": "0",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "planner",
+                            "name": "planner",
+                            "attribute": {
+                                "value": "",
+                                "direct": false
+                            },
+                            "node_id": "0"
+                        },
+                        "intent": "others",
+                        "input": [],
+                        "output": "",
+                        "steps": [
+                            {
+                                "context_generate": "You're welcome! If you have any more questions or need assistance in the future, feel free to reach out. Enjoy the show, and take care!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "You're welcome! If you have any more questions or need assistance in the future, feel free to reach out. Enjoy the show, and take care"
+            }
+        ],
+        "profile": "Meet our new prospect, a culturally curious individual from Dublin who is eager to explore the rich tapestry of Irish-American theatrical works offered by the Irish Repertory Theatre. As someone who is new to our offerings, they have recently made a single ticket purchase for an upcoming performance, marking their first step into the world of evocative theater, music, and dance that we proudly present.\n\nThis customer is characterized by a passive persona, preferring to engage with our content through text-based communication. They discovered us through search engine results, indicating a proactive interest in exploring new cultural experiences. Despite being new to our product, they have a keen eye for quality and are mindful of their budget, seeking to ensure that their purchase aligns with their quality-oriented preferences while adhering to low budget constraints.\n\nCurrently browsing our product page, this individual is focused on tracking the delivery status of their recent ticket purchase, demonstrating a desire for a seamless and satisfactory customer experience. As they continue to explore the contemporary Irish-American experience through our theater, we are committed to providing them with the context and understanding they seek, all through the unique lens of Irish sensibility.",
+        "goal": "Goal: Track the delivery status of my recent single ticket purchase for an upcoming performance at the Irish Repertory Theatre, ensuring it aligns with my quality-oriented preferences and low budget constraints as a new prospect exploring Irish-American theatrical works.",
+        "attributes": {
+            "goal": "Goal: Track the delivery status of my recent single ticket purchase for an upcoming performance at the Irish Repertory Theatre, ensuring it aligns with my quality-oriented preferences and low budget constraints as a new prospect exploring Irish-American theatrical works.",
+            "product_experience_level": "new to this product",
+            "customer_type": "new prospect",
+            "persona": "passive",
+            "current_webpage": "product page",
+            "modality": "text",
+            "communication_type": "incoming",
+            "discovery_type": "search engine results",
+            "buying_behavior": "quality oriented",
+            "budget": "low budget",
+            "purchase_history": "single ticket purchase",
+            "location": "Dublin"
+        },
+        "goal_completion": false
+    },
+    {
+        "id": 2,
+        "convo": [
+            {
+                "role": "user",
+                "content": "Hi there, I'm having trouble with the online ticketing system while trying to buy a season subscription. Can you help me sort this out?",
+                "intent": "user wants to join or purchase membership",
+                "curr_node": "14",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                            "name": "MessageWorker",
+                            "attribute": {
+                                "value": "Are you interested in learning more about our membership options and the benefits they offer?",
+                                "task": "Initiate conversation to ask the user if they are interested in learning more about membership options and the benefits associated with them.",
+                                "directed": false
+                            },
+                            "node_id": "14"
+                        },
+                        "intent": "user wants to join or purchase membership",
+                        "input": [],
+                        "output": "Hi there! I'd be happy to help you with the online ticketing system for purchasing a season subscription. Could you please let me know what specific issue you're encountering, so I can assist you better? Additionally, are you interested in learning more about our membership options and the benefits they offer?",
+                        "steps": [
+                            {
+                                "generator": "Hi there! I'd be happy to help you with the online ticketing system for purchasing a season subscription. Could you please let me know what specific issue you're encountering, so I can assist you better? Additionally, are you interested in learning more about our membership options and the benefits they offer?"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "Hi there! I'd be happy to help you with the online ticketing system for purchasing a season subscription. Could you please let me know what specific issue you're encountering, so I can assist you better? Additionally, are you interested in learning more about our membership options and the benefits they offer"
+            },
+            {
+                "role": "user",
+                "content": "Thanks! So, when I try to purchase the season subscription from the product page, it keeps giving me an error message and won't let me complete the transaction. It's really frustrating. I'm already a current season subscription holder from Boston, and I want to make sure I can continue enjoying the shows without these hiccups. Any idea what's going wrong? And yes, I'd love to hear more about the membership benefits too!",
+                "intent": "user wants to join or purchase membership",
+                "curr_node": "35",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                            "name": "MessageWorker",
+                            "attribute": {
+                                "value": "Are you interested in knowing about our membership benefits or the available discounts?",
+                                "task": "Identify if the user wants to know about membership or discounts.",
+                                "directed": false
+                            },
+                            "node_id": "35"
+                        },
+                        "intent": "user wants to join or purchase membership",
+                        "input": [],
+                        "output": "I'm sorry to hear about the trouble you're experiencing with the online ticketing system. It might be a technical issue on the website. I recommend trying the following steps:\n\n1. Clear your browser's cache and cookies, then try again.\n2. Use a different browser or device to see if the error persists.\n3. Check your internet connection to ensure it's stable.\n\nIf these steps don't resolve the issue, it might be best to contact the customer support team directly for further assistance with your transaction.\n\nRegarding the membership benefits, as a season subscription holder, you generally receive perks such as discounted tickets, early access to booking, and invitations to special events. Sometimes, there are also exclusive member-only discounts and promotions.\n\nIf you have any other questions or need further assistance, feel free to ask! Also, are you interested in knowing about our membership benefits or any available discounts?",
+                        "steps": [
+                            {
+                                "generator": "I'm sorry to hear about the trouble you're experiencing with the online ticketing system. It might be a technical issue on the website. I recommend trying the following steps:\n\n1. Clear your browser's cache and cookies, then try again.\n2. Use a different browser or device to see if the error persists.\n3. Check your internet connection to ensure it's stable.\n\nIf these steps don't resolve the issue, it might be best to contact the customer support team directly for further assistance with your transaction.\n\nRegarding the membership benefits, as a season subscription holder, you generally receive perks such as discounted tickets, early access to booking, and invitations to special events. Sometimes, there are also exclusive member-only discounts and promotions.\n\nIf you have any other questions or need further assistance, feel free to ask! Also, are you interested in knowing about our membership benefits or any available discounts?"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "I'm sorry to hear about the trouble you're experiencing with the online ticketing system. It might be a technical issue on the website. I recommend trying the following steps:  1. Clear your browser's cache and cookies, then try again. 2. Use a different browser or device to see if the error persists. 3. Check your internet connection to ensure it's stable.  If these steps don't resolve the issue, it might be best to contact the customer support team directly for further assistance with your transaction.  Regarding the membership benefits, as a season subscription holder, you generally receive perks such as discounted tickets, early access to booking, and invitations to special events. Sometimes, there are also exclusive member-only discounts and promotions.  If you have any other questions or need further assistance, feel free to ask! Also, are you interested in knowing about our membership benefits or any available discounts"
+            },
+            {
+                "role": "user",
+                "content": "Thanks for the tips! I'll give those a try and see if it helps. If not, I'll definitely reach out to customer support. The membership benefits sound great, especially the early access and special events. Are there any current promotions or discounts for renewing my subscription? That would be really helpful to know!",
+                "intent": "user wants to know special events or discounts offered",
+                "curr_node": "19",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                            "name": "MessageWorker",
+                            "attribute": {
+                                "value": "We currently have special events and discounts on tickets available! Would you like to know more?",
+                                "task": "Use the MessageWorker to inform the user about any current special events or discounts on tickets.",
+                                "directed": false
+                            },
+                            "node_id": "19"
+                        },
+                        "intent": "user wants to know special events or discounts offered",
+                        "input": [],
+                        "output": "You're welcome! I'm glad the tips were helpful. As for current promotions or discounts on renewing your subscription, they sometimes offer special deals for existing subscribers, so it's definitely worth checking. Additionally, there might be special events or discounts available right now.\n\nWe currently have special events and discounts on tickets available! Would you like to know more about them? If you have any other questions or need further assistance, feel free to ask!",
+                        "steps": [
+                            {
+                                "generator": "You're welcome! I'm glad the tips were helpful. As for current promotions or discounts on renewing your subscription, they sometimes offer special deals for existing subscribers, so it's definitely worth checking. Additionally, there might be special events or discounts available right now.\n\nWe currently have special events and discounts on tickets available! Would you like to know more about them? If you have any other questions or need further assistance, feel free to ask!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "You're welcome! I'm glad the tips were helpful. As for current promotions or discounts on renewing your subscription, they sometimes offer special deals for existing subscribers, so it's definitely worth checking. Additionally, there might be special events or discounts available right now.  We currently have special events and discounts on tickets available! Would you like to know more about them? If you have any other questions or need further assistance, feel free to ask"
+            },
+            {
+                "role": "user",
+                "content": "Yes, I'd love to hear more about the special events and discounts on tickets! It would be great to take advantage of any offers while renewing my subscription. Thanks for your help!",
+                "intent": "user wants to know special events or discounts offered",
+                "curr_node": "19",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                            "name": "MessageWorker",
+                            "attribute": {
+                                "value": "We currently have special events and discounts on tickets available! Would you like to know more?",
+                                "task": "Use the MessageWorker to inform the user about any current special events or discounts on tickets.",
+                                "directed": false
+                            },
+                            "node_id": "19"
+                        },
+                        "intent": "user wants to know special events or discounts offered",
+                        "input": [],
+                        "output": "I'm glad you're interested! We currently have several special events and ticket discounts you might find appealing. Here are some highlights:\n\n1. **Early Bird Renewals**: Renew your subscription early and receive a discount on your overall package.\n2. **Special Member Events**: Exclusive invitations to behind-the-scenes events and meet-and-greets with actors and directors.\n3. **Ticket Discounts**: Save on additional tickets for bringing friends or family along to enjoy the shows with you.\n\nFor the most current details and to ensure you're getting the best deal, I recommend checking the official website or contacting the customer support team. If you'd like more information or have any other questions, feel free to ask!\n\nWe currently have special events and discounts on tickets available! Would you like to know more?",
+                        "steps": [
+                            {
+                                "generator": "I'm glad you're interested! We currently have several special events and ticket discounts you might find appealing. Here are some highlights:\n\n1. **Early Bird Renewals**: Renew your subscription early and receive a discount on your overall package.\n2. **Special Member Events**: Exclusive invitations to behind-the-scenes events and meet-and-greets with actors and directors.\n3. **Ticket Discounts**: Save on additional tickets for bringing friends or family along to enjoy the shows with you.\n\nFor the most current details and to ensure you're getting the best deal, I recommend checking the official website or contacting the customer support team. If you'd like more information or have any other questions, feel free to ask!\n\nWe currently have special events and discounts on tickets available! Would you like to know more?"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "I'm glad you're interested! We currently have several special events and ticket discounts you might find appealing. Here are some highlights:  1. **Early Bird Renewals**: Renew your subscription early and receive a discount on your overall package. 2. **Special Member Events**: Exclusive invitations to behind-the-scenes events and meet-and-greets with actors and directors. 3. **Ticket Discounts**: Save on additional tickets for bringing friends or family along to enjoy the shows with you.  For the most current details and to ensure you're getting the best deal, I recommend checking the official website or contacting the customer support team. If you'd like more information or have any other questions, feel free to ask!  We currently have special events and discounts on tickets available! Would you like to know more"
+            },
+            {
+                "role": "user",
+                "content": "Those offers sound fantastic, especially the early bird renewals and special member events! I'll definitely look into those. I'll also keep an eye on the website and reach out to customer support if I need more details. Thanks so much for your help! If I have any more questions, I'll be sure to ask.",
+                "intent": "user wants to know special events or discounts offered",
+                "curr_node": "19",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                            "name": "MessageWorker",
+                            "attribute": {
+                                "value": "We currently have special events and discounts on tickets available! Would you like to know more?",
+                                "task": "Use the MessageWorker to inform the user about any current special events or discounts on tickets.",
+                                "directed": false
+                            },
+                            "node_id": "19"
+                        },
+                        "intent": "user wants to know special events or discounts offered",
+                        "input": [],
+                        "output": "You're very welcome! I'm glad to hear the offers are appealing, and it sounds like you have a great plan in place. If you need any more information or help down the line, don't hesitate to reach out. Enjoy the shows, and if you have any further questions or need assistance, I'm here to help! \n\nWe currently have special events and discounts on tickets available! Would you like to know more? \n\nAlso, I would appreciate any feedback about the assistance provided today\u2014it helps improve future interactions.",
+                        "steps": [
+                            {
+                                "generator": "You're very welcome! I'm glad to hear the offers are appealing, and it sounds like you have a great plan in place. If you need any more information or help down the line, don't hesitate to reach out. Enjoy the shows, and if you have any further questions or need assistance, I'm here to help! \n\nWe currently have special events and discounts on tickets available! Would you like to know more? \n\nAlso, I would appreciate any feedback about the assistance provided today\u2014it helps improve future interactions."
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "You're very welcome! I'm glad to hear the offers are appealing, and it sounds like you have a great plan in place. If you need any more information or help down the line, don't hesitate to reach out. Enjoy the shows, and if you have any further questions or need assistance, I'm here to help!   We currently have special events and discounts on tickets available! Would you like to know more?   Also, I would appreciate any feedback about the assistance provided today\u2014it helps improve future interactions"
+            }
+        ],
+        "profile": "**Customer Profile:**\n\nMeet our customer, a passionate theater enthusiast from Boston who is deeply interested in the Irish Repertory Theatre's offerings. As a current season subscription holder, they have recently encountered difficulties with the online ticketing system while attempting to purchase a new season subscription. This experience has prompted them to reach out in hopes of resolving the issue and ensuring a seamless purchasing process in the future.\n\nDespite being new to the online ticketing system, this customer is an aggressive communicator, eager to address and resolve any obstacles they encounter. They discovered the Irish Repertory Theatre through social media, which speaks to their engagement with contemporary platforms and their interest in staying connected with cultural events.\n\nTheir buying behavior is quality-oriented, indicating a preference for high-quality theatrical experiences, even while operating within a low budget. This suggests that they value the rich, evocative works that the Irish Repertory Theatre is known for, and are willing to invest in experiences that resonate with their cultural interests.\n\nCurrently browsing the product page, they are actively seeking solutions and improvements to enhance their future interactions with the theatre's offerings. As a new prospect, they represent a valuable opportunity for the theatre to expand its audience base and foster a loyal relationship by addressing their concerns promptly and effectively.",
+        "goal": "Goal: Report an issue with the Irish Repertory Theatre's online ticketing system, specifically regarding difficulties encountered while trying to purchase a season subscription from the product page. As a new prospect and current season subscription holder from Boston, I am seeking a resolution to ensure a seamless experience for future purchases.",
+        "attributes": {
+            "goal": "Goal: Report an issue with the Irish Repertory Theatre's online ticketing system, specifically regarding difficulties encountered while trying to purchase a season subscription from the product page. As a new prospect and current season subscription holder from Boston, I am seeking a resolution to ensure a seamless experience for future purchases.",
+            "product_experience_level": "new to this product",
+            "customer_type": "new prospect",
+            "persona": "aggressive",
+            "current_webpage": "product page",
+            "modality": "text",
+            "communication_type": "outgoing",
+            "discovery_type": "social media",
+            "buying_behavior": "quality oriented",
+            "budget": "low budget",
+            "purchase_history": "season subscription holder",
+            "location": "Boston"
+        },
+        "goal_completion": false
+    },
+    {
+        "id": 3,
+        "convo": [
+            {
+                "role": "user",
+                "content": "Hi there, I'm trying to book group tickets for a show at the Irish Repertory Theatre, but I'm having some trouble with the online system. Can you help me out?",
+                "intent": "user wants to book tickets for a show",
+                "curr_node": "1",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                            "name": "MessageWorker",
+                            "attribute": {
+                                "value": "Could you please specify your show preferences, such as genre, date, or location?",
+                                "task": "Prompt the user to specify their show preferences, such as genre, preferred date, or location, to provide tailored recommendations.",
+                                "directed": false
+                            },
+                            "node_id": "1"
+                        },
+                        "intent": "user wants to book tickets for a show",
+                        "input": [],
+                        "output": "Of course, I'd be happy to help you with booking group tickets for a show at the Irish Repertory Theatre. Could you please specify your show preferences, such as genre, date, or location? This will help me assist you better with your booking.",
+                        "steps": [
+                            {
+                                "generator": "Of course, I'd be happy to help you with booking group tickets for a show at the Irish Repertory Theatre. Could you please specify your show preferences, such as genre, date, or location? This will help me assist you better with your booking."
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "Of course, I'd be happy to help you with booking group tickets for a show at the Irish Repertory Theatre. Could you please specify your show preferences, such as genre, date, or location? This will help me assist you better with your booking"
+            },
+            {
+                "role": "user",
+                "content": "I'm still deciding on the show, but I'm interested in something that really captures the Irish-American experience. I'm looking at dates in the next month or so. The issue I'm having is that when I try to select the group ticket option, it doesn't seem to apply the group discount. Any idea why that might be happening?",
+                "intent": "user wants to know special events or discounts offered",
+                "curr_node": "19",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                            "name": "MessageWorker",
+                            "attribute": {
+                                "value": "We currently have special events and discounts on tickets available! Would you like to know more?",
+                                "task": "Use the MessageWorker to inform the user about any current special events or discounts on tickets.",
+                                "directed": false
+                            },
+                            "node_id": "19"
+                        },
+                        "intent": "user wants to know special events or discounts offered",
+                        "input": [],
+                        "output": "I understand the situation. It's possible that the group discount isn't being applied due to a technical glitch or specific conditions that might need to be met for the discount to work. I recommend checking if there are minimum ticket requirements for the discount or if there are any restrictions on the shows or dates. I can also assist you with reaching out to the theater's customer support for more specific help.\n\nSince you're looking for a show that captures the Irish-American experience, the Irish Repertory Theatre would definitely have something fitting. Once you're decided on a show, I can help you through the booking process.\n\nAdditionally, we currently have special events and discounts on tickets available! Would you like to know more?",
+                        "steps": [
+                            {
+                                "generator": "I understand the situation. It's possible that the group discount isn't being applied due to a technical glitch or specific conditions that might need to be met for the discount to work. I recommend checking if there are minimum ticket requirements for the discount or if there are any restrictions on the shows or dates. I can also assist you with reaching out to the theater's customer support for more specific help.\n\nSince you're looking for a show that captures the Irish-American experience, the Irish Repertory Theatre would definitely have something fitting. Once you're decided on a show, I can help you through the booking process.\n\nAdditionally, we currently have special events and discounts on tickets available! Would you like to know more?"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "I understand the situation. It's possible that the group discount isn't being applied due to a technical glitch or specific conditions that might need to be met for the discount to work. I recommend checking if there are minimum ticket requirements for the discount or if there are any restrictions on the shows or dates. I can also assist you with reaching out to the theater's customer support for more specific help.  Since you're looking for a show that captures the Irish-American experience, the Irish Repertory Theatre would definitely have something fitting. Once you're decided on a show, I can help you through the booking process.  Additionally, we currently have special events and discounts on tickets available! Would you like to know more"
+            },
+            {
+                "role": "user",
+                "content": "Thanks for the info! I'll double-check the requirements for the group discount. In the meantime, I'd love to hear more about any special events or discounts you have. That could really help with planning my visit on a budget.",
+                "intent": "user wants to know special events or discounts offered",
+                "curr_node": "19",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                            "name": "MessageWorker",
+                            "attribute": {
+                                "value": "We currently have special events and discounts on tickets available! Would you like to know more?",
+                                "task": "Use the MessageWorker to inform the user about any current special events or discounts on tickets.",
+                                "directed": false
+                            },
+                            "node_id": "19"
+                        },
+                        "intent": "user wants to know special events or discounts offered",
+                        "input": [],
+                        "output": "Certainly! The Irish Repertory Theatre often has special events and promotions that could provide added value to your visit. For instance, they might offer discounts for early bookings or specific performances. Additionally, there could be special events that align with your interest in the Irish-American experience. I recommend checking their website or contacting their box office for the most current information. \n\nIf you'd like, I can also assist you with finding more details on these offers or help with any other questions about planning your visit.\nWe currently have special events and discounts on tickets available! Would you like to know more?",
+                        "steps": [
+                            {
+                                "generator": "Certainly! The Irish Repertory Theatre often has special events and promotions that could provide added value to your visit. For instance, they might offer discounts for early bookings or specific performances. Additionally, there could be special events that align with your interest in the Irish-American experience. I recommend checking their website or contacting their box office for the most current information. \n\nIf you'd like, I can also assist you with finding more details on these offers or help with any other questions about planning your visit.\nWe currently have special events and discounts on tickets available! Would you like to know more?"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "Certainly! The Irish Repertory Theatre often has special events and promotions that could provide added value to your visit. For instance, they might offer discounts for early bookings or specific performances. Additionally, there could be special events that align with your interest in the Irish-American experience. I recommend checking their website or contacting their box office for the most current information.   If you'd like, I can also assist you with finding more details on these offers or help with any other questions about planning your visit. We currently have special events and discounts on tickets available! Would you like to know more"
+            },
+            {
+                "role": "user",
+                "content": "Yes, please! I'd appreciate any details on current special events or discounts. It would be great to make the most of my visit while keeping within my budget.",
+                "intent": "user wants to know special events or discounts offered",
+                "curr_node": "19",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                            "name": "MessageWorker",
+                            "attribute": {
+                                "value": "We currently have special events and discounts on tickets available! Would you like to know more?",
+                                "task": "Use the MessageWorker to inform the user about any current special events or discounts on tickets.",
+                                "directed": false
+                            },
+                            "node_id": "19"
+                        },
+                        "intent": "user wants to know special events or discounts offered",
+                        "input": [],
+                        "output": "Certainly! Here are some ways you can make the most of your visit to the Irish Repertory Theatre on a budget:\n\n1. **Early Bird Discounts**: Booking your tickets in advance can sometimes unlock special early bird rates. It's worth checking their website or signing up for newsletters to stay informed about such offers.\n\n2. **Matinee Performances**: These performances are often priced lower than evening shows, offering a more affordable way to enjoy a performance.\n\n3. **Membership Perks**: If you're considering multiple visits, look into any membership or subscription packages they offer, which might include discounted rates for members.\n\n4. **Special Events**: Occasionally, the theater hosts events or post-show discussions that can enrich your experience and offer more value for your ticket purchase.\n\nI recommend visiting the Irish Repertory Theatre's official website or contacting their box office for the latest information on these deals and events. We currently have special events and discounts on tickets available! Would you like to know more?",
+                        "steps": [
+                            {
+                                "generator": "Certainly! Here are some ways you can make the most of your visit to the Irish Repertory Theatre on a budget:\n\n1. **Early Bird Discounts**: Booking your tickets in advance can sometimes unlock special early bird rates. It's worth checking their website or signing up for newsletters to stay informed about such offers.\n\n2. **Matinee Performances**: These performances are often priced lower than evening shows, offering a more affordable way to enjoy a performance.\n\n3. **Membership Perks**: If you're considering multiple visits, look into any membership or subscription packages they offer, which might include discounted rates for members.\n\n4. **Special Events**: Occasionally, the theater hosts events or post-show discussions that can enrich your experience and offer more value for your ticket purchase.\n\nI recommend visiting the Irish Repertory Theatre's official website or contacting their box office for the latest information on these deals and events. We currently have special events and discounts on tickets available! Would you like to know more?"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "Certainly! Here are some ways you can make the most of your visit to the Irish Repertory Theatre on a budget:  1. **Early Bird Discounts**: Booking your tickets in advance can sometimes unlock special early bird rates. It's worth checking their website or signing up for newsletters to stay informed about such offers.  2. **Matinee Performances**: These performances are often priced lower than evening shows, offering a more affordable way to enjoy a performance.  3. **Membership Perks**: If you're considering multiple visits, look into any membership or subscription packages they offer, which might include discounted rates for members.  4. **Special Events**: Occasionally, the theater hosts events or post-show discussions that can enrich your experience and offer more value for your ticket purchase.  I recommend visiting the Irish Repertory Theatre's official website or contacting their box office for the latest information on these deals and events. We currently have special events and discounts on tickets available! Would you like to know more"
+            }
+        ],
+        "profile": "Customer Profile:\n\nMeet our new prospect from Dublin, who is eager to explore the rich tapestry of Irish and Irish-American theater offered by the Irish Repertory Theatre. As someone who values quality experiences, this individual is currently navigating the options available for enjoying evocative works of theater, music, and dance on a budget. They are new to our online ticket purchasing system and have reached out to report an issue with booking group tickets, indicating their interest in attending performances with others.\n\nThis customer discovered us through search engine results and is currently browsing our home page, seeking to understand more about what we offer. Their buying behavior is distinctly quality-oriented, yet they are mindful of their budget constraints. As a group ticket buyer, they are likely looking for opportunities to share the experience with friends or family, enhancing their connection to the contemporary Irish-American experience.\n\nWith a neutral persona and a preference for text-based communication, this individual represents a valuable opportunity for us to engage a new audience from Dublin. By addressing their concerns and providing a seamless ticket purchasing experience, we can foster a positive relationship and encourage their continued exploration of our productions.",
+        "goal": "Goal: Report an issue with the online ticket purchasing system for a group booking at Irish Repertory Theatre, as a new prospect from Dublin who values quality and is exploring options for experiencing Irish and Irish-American theater on a budget.",
+        "attributes": {
+            "goal": "Goal: Report an issue with the online ticket purchasing system for a group booking at Irish Repertory Theatre, as a new prospect from Dublin who values quality and is exploring options for experiencing Irish and Irish-American theater on a budget.",
+            "product_experience_level": "new to this product",
+            "customer_type": "new prospect",
+            "persona": "neutral",
+            "current_webpage": "home page",
+            "modality": "text",
+            "communication_type": "incoming",
+            "discovery_type": "search engine results",
+            "buying_behavior": "quality oriented",
+            "budget": "low budget",
+            "purchase_history": "group ticket buyer",
+            "location": "Dublin"
+        },
+        "goal_completion": true
+    },
+    {
+        "id": 4,
+        "convo": [
+            {
+                "role": "user",
+                "content": "Hi, I recently bought group tickets for a show at the Irish Repertory Theatre through a third-party site. Can you help me with getting a refund? I'm on a tight budget and need to sort this out. Thanks!",
+                "intent": "others",
+                "curr_node": "0",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "planner",
+                            "name": "planner",
+                            "attribute": {
+                                "value": "",
+                                "direct": false
+                            },
+                            "node_id": "0"
+                        },
+                        "intent": "others",
+                        "input": [],
+                        "output": "",
+                        "steps": [
+                            {
+                                "context_generate": "I'm sorry to hear about your situation, but I can't assist with refunds for tickets purchased through third-party sites. I recommend reaching out directly to the site where you bought the tickets for their refund policy and assistance. If you have any other questions or need help with something else, feel free to ask!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "I'm sorry to hear about your situation, but I can't assist with refunds for tickets purchased through third-party sites. I recommend reaching out directly to the site where you bought the tickets for their refund policy and assistance. If you have any other questions or need help with something else, feel free to ask"
+            },
+            {
+                "role": "user",
+                "content": "Thanks for the quick response. I understand. Could you let me know if there's any way the theatre can assist with this, or if there are any exceptions for returning customers? Just trying to explore all options.",
+                "intent": "others",
+                "curr_node": "0",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "planner",
+                            "name": "planner",
+                            "attribute": {
+                                "value": "",
+                                "direct": false
+                            },
+                            "node_id": "0"
+                        },
+                        "intent": "others",
+                        "input": [],
+                        "output": "",
+                        "steps": [
+                            {
+                                "context_generate": "I understand your concern, but typically, refund policies are determined by the third-party site where the tickets were purchased. However, it might be worth reaching out directly to the Irish Repertory Theatre to explain your situation and see if they can offer any guidance or exceptions for returning customers. They might have specific policies or be able to provide advice on how to proceed. If you need help with anything else or have more questions, feel free to ask!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "I understand your concern, but typically, refund policies are determined by the third-party site where the tickets were purchased. However, it might be worth reaching out directly to the Irish Repertory Theatre to explain your situation and see if they can offer any guidance or exceptions for returning customers. They might have specific policies or be able to provide advice on how to proceed. If you need help with anything else or have more questions, feel free to ask"
+            },
+            {
+                "role": "user",
+                "content": "Thank you for the suggestion. I'll definitely reach out to the theatre directly to see if they can offer any assistance. In the meantime, could you provide me with their contact information or the best way to get in touch with them?",
+                "intent": "others",
+                "curr_node": "0",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "planner",
+                            "name": "planner",
+                            "attribute": {
+                                "value": "",
+                                "direct": false
+                            },
+                            "node_id": "0"
+                        },
+                        "intent": "others",
+                        "input": [],
+                        "output": "",
+                        "steps": [
+                            {
+                                "context_generate": "You're welcome! To get in touch with the Irish Repertory Theatre, you can visit their official website for contact details. They usually have a \"Contact Us\" section where you can find phone numbers and email addresses for customer service or ticketing inquiries. If you have any other questions or need further assistance, feel free to let me know!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "You're welcome! To get in touch with the Irish Repertory Theatre, you can visit their official website for contact details. They usually have a \"Contact Us\" section where you can find phone numbers and email addresses for customer service or ticketing inquiries. If you have any other questions or need further assistance, feel free to let me know"
+            },
+            {
+                "role": "user",
+                "content": "Great, I'll check out their website for the contact details. Thanks for your help! If I have any more questions, I'll be sure to reach out. Have a good day!",
+                "intent": "others",
+                "curr_node": "0",
+                "trajectory": [
+                    {
+                        "info": {
+                            "id": "planner",
+                            "name": "planner",
+                            "attribute": {
+                                "value": "",
+                                "direct": false
+                            },
+                            "node_id": "0"
+                        },
+                        "intent": "others",
+                        "input": [],
+                        "output": "",
+                        "steps": [
+                            {
+                                "context_generate": "You're welcome! I'm glad I could assist you. If you have any more questions in the future or need help with anything else, don't hesitate to reach out. Have a wonderful day!"
+                            }
+                        ],
+                        "personalized_intent": ""
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": "You're welcome! I'm glad I could assist you. If you have any more questions in the future or need help with anything else, don't hesitate to reach out. Have a wonderful day"
+            }
+        ],
+        "profile": "Meet our customer, a returning patron of the Irish Repertory Theatre, who is currently navigating a new product experience. Residing in the vibrant city of New York, this customer discovered our offerings through a third-party website, showcasing their openness to exploring new avenues for cultural enrichment. With a history of purchasing group tickets, they demonstrate a keen interest in sharing the evocative works of Irish and Irish-American theater, music, and dance with others.\n\nCurrently, they are seeking a refund for a recent group ticket purchase, a request they plan to make via text communication. Their approach is characterized by a neutral tone, reflecting a balanced and considerate demeanor. Economic considerations are at the forefront of their decision-making process, as they operate within a low budget. This pragmatic buying behavior underscores their appreciation for value and affordability.\n\nAs they initiate their refund request from the product page, they exemplify a thoughtful and methodical approach to resolving their concerns. Their engagement with the Irish Repertory Theatre highlights their ongoing commitment to understanding and experiencing the rich tapestry of the contemporary Irish-American narrative, even as they navigate the practicalities of their budgetary constraints.",
+        "goal": "Goal: Request a refund for a group ticket purchase for a recent performance at the Irish Repertory Theatre, as a returning customer who is new to this product and discovered it through a third-party website. The request will be made via text communication, with a focus on economic considerations due to a low budget, and will be initiated from the product page while maintaining a neutral tone.",
+        "attributes": {
+            "goal": "Goal: Request a refund for a group ticket purchase for a recent performance at the Irish Repertory Theatre, as a returning customer who is new to this product and discovered it through a third-party website. The request will be made via text communication, with a focus on economic considerations due to a low budget, and will be initiated from the product page while maintaining a neutral tone.",
+            "product_experience_level": "new to this product",
+            "customer_type": "returning customer",
+            "persona": "neutral",
+            "current_webpage": "product page",
+            "modality": "text",
+            "communication_type": "outgoing",
+            "discovery_type": "third party website",
+            "buying_behavior": "economic",
+            "budget": "low budget",
+            "purchase_history": "group ticket buyer",
+            "location": "New York City"
+        },
+        "goal_completion": true
+    }
+]

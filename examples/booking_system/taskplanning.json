@@ -1,0 +1,60 @@
+[
+    {
+        "task_name": "Assist the user in locating and purchasing tickets for a desired show",
+        "steps": [
+            "Prompt the user to specify their show preferences, such as genre, preferred date, or location, to provide tailored recommendations.",
+            "Use the user_preference-based_show_recommendations subtask to match their preferences with available shows and provide a list of recommended shows.",
+            "Ask if the user needs more information about a specific show or details regarding venue and availability using the event_and_show_information_retrieval subtask.",
+            "Facilitate the ticket booking process by guiding the user to select a show, choose seats, and complete the purchase using the ticket_purchase_assistance subtask.",
+            "Inform the user about membership options and applicable discounts, using the membership_and_discount_guidance subtask, as the final step of the purchase process."
+        ]
+    },
+    {
+        "task_name": "Provide details about the timing and schedule of various shows",
+        "steps": [
+            "Provide details about the timing and schedule of various shows"
+        ]
+    },
+    {
+        "task_name": "Deliver information about the venue, including location and accessibility features",
+        "steps": [
+            "Deliver information about the venue, including location and accessibility features"
+        ]
+    },
+    {
+        "task_name": "Offer recommendations for shows based on user preferences and interests",
+        "steps": [
+            "Ask the user about their preferences and interests for shows, such as genre, location, or time.",
+            "Use user_preference-based_show_recommendations to find shows that match the user's preferences.",
+            "Provide the user with a list of recommended shows and include information such as show details and timing using event_and_show_information_retrieval.",
+            "Ask the user if they are interested in any of the recommended shows or if they want additional options.",
+            "If the user is interested in a show, offer ticket_purchase_assistance to help them book a ticket or ask if they have any further questions or need assistance with discounts using membership_and_discount_guidance."
+        ]
+    },
+    {
+        "task_name": "Provide real-time updates on ticket availability for specific shows",
+        "steps": [
+            "Provide real-time updates on ticket availability for specific shows"
+        ]
+    },
+    {
+        "task_name": "Guide the user on how to join or purchase membership for discounts and special offers",
+        "steps": [
+            "Initiate conversation to ask the user if they are interested in learning more about membership options and the benefits associated with them.",
+            "Provide information about the types of memberships available, along with the discounts and special offers they can avail.",
+            "Ask the user if they are interested in joining a specific membership or if they need more details about any particular option.",
+            "Guide the user through the process of joining the membership, including how to complete any necessary forms or payment if applicable.",
+            "Confirm that the user has successfully joined the membership and provide information on how to utilize their discounts on future bookings."
+        ]
+    },
+    {
+        "task_name": "Inform users about any current special events or discounts on tickets",
+        "steps": [
+            "Use the MessageWorker to inform the user about any current special events or discounts on tickets.",
+            "Invoke the membership_and_discount_guidance subtask to provide more details about the discounts and how users can avail of them.",
+            "Ask the user if they have any preferences or interests in specific events or types of shows using the MessageWorker.",
+            "Use the user_preference-based_show_recommendations subtask to recommend shows based on the user's interests and preferences.",
+            "Offer additional assistance, such as providing detailed information about a show or helping with the ticket purchase process using the ticket_purchase_assistance subtask."
+        ]
+    }
+]

@@ -1,0 +1,1480 @@
+{
+    "nodes": [
+        [
+            "0",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Hello and welcome to the Professional Automotive Consultant! How can I assist you with your automotive needs today?",
+                    "task": "start message",
+                    "directed": false
+                },
+                "limit": 1,
+                "type": "start"
+            }
+        ],
+        [
+            "1",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "gather_user_preferences_and_needs"
+                },
+                "attribute": {
+                    "value": "35",
+                    "task": "Gather comprehensive information about the user's automotive preferences and needs, including vehicle type, preferred features, budget, and financing options using the gather_user_preferences_and_needs resource.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "2",
+            {
+                "resource": {
+                    "id": "c4a5d6e7-8901-23f4-5678-90123456789c",
+                    "name": "CarAdvisorWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Utilize the CarAdvisorWorker to analyze the collected preferences and coordinate database queries via CarDatabaseWorker to generate tailored automotive recommendations.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "3",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "perform_market_analysis_and_insight_generation"
+                },
+                "attribute": {
+                    "value": "39",
+                    "task": "Perform market analysis and generate insights on the recommended vehicles using perform_market_analysis_and_insight_generation to provide the user with market trends and pricing information.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "4",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Would you like assistance connecting with local dealers or need further details on any of the recommended vehicles?",
+                    "task": "Check with the user if they require assistance in connecting with local dealers or if they need more information on the recommended vehicles.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "5",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "connect_with_local_dealers"
+                },
+                "attribute": {
+                    "value": "43",
+                    "task": "Facilitate a connection with local dealers by using the connect_with_local_dealers resource to arrange appointments, set up test drives, or provide dealer contact information as per the user's preference.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "6",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "gather_user_preferences_and_needs"
+                },
+                "attribute": {
+                    "value": "35",
+                    "task": "Gather user preferences and needs, such as vehicle type, preferred features, budget, and financing options.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "7",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "perform_market_analysis_and_insight_generation"
+                },
+                "attribute": {
+                    "value": "39",
+                    "task": "Perform market analysis and generate insights based on user preferences using real-time market intelligence and data from the company's internal documentation.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "8",
+            {
+                "resource": {
+                    "id": "f1e2d3c4-b5a6-9870-5432-16789fedcba0",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "Based on your preferences, here are some industry insights and trends you might find useful.",
+                    "task": "Provide the user with analysis, industry insights, and trends relevant to their preferences.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "9",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Would you like to compare specific car models or need more detailed specifications for any vehicles?",
+                    "task": "Ask if the user would like to compare specific car models or needs more detailed specifications.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "10",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "connect_with_local_dealers"
+                },
+                "attribute": {
+                    "value": "43",
+                    "task": "Offer to connect with local dealers or provide additional help with any other automotive service needs.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "11",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "gather_user_preferences_and_needs"
+                },
+                "attribute": {
+                    "value": "35",
+                    "task": "Gather comprehensive information about the user's automotive preferences and needs, including vehicle type, preferred features, budget, and financing options.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "12",
+            {
+                "resource": {
+                    "id": "d1a2t3a4-5678-90bc-def1-23456789abcd",
+                    "name": "CarDatabaseWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Use the CarDatabaseWorker to retrieve potential vehicle options that match the user's criteria.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "13",
+            {
+                "resource": {
+                    "id": "m1k2t3i4-5678-90ab-cdef-123456789mkt",
+                    "name": "car_tools-market_intelligence-market_intelligence"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Perform market analysis and insight generation using the market_intelligence tool to provide users with current market trends, vehicle price trends, and financing options based on their preferences.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "14",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Here are the vehicle options we found for you. Do you have any specific preferences, or would you like to explore further options?",
+                    "task": "Present the user with findings and vehicle options and ask if they have specific preferences or if they want to explore further options.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "15",
+            {
+                "resource": {
+                    "id": "c4a5d6e7-8901-23f4-5678-90123456789c",
+                    "name": "CarAdvisorWorker"
+                },
+                "attribute": {
+                    "value": "You've selected the [Vehicle Model]. Here are the pricing details and available financing options. Would you like me to estimate your monthly payments?",
+                    "task": "If the user has selected a vehicle, confirm the selection and provide guidance on pricing, financing options, and payment estimation.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "16",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "connect_with_local_dealers"
+                },
+                "attribute": {
+                    "value": "43",
+                    "task": "Offer to facilitate any additional steps the user wishes to take, such as connecting with local dealers for test drives or finalizing financing details.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "17",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Is there anything else I can help you with today? Here is a summary of our discussion and the next steps we agreed on.",
+                    "task": "Conclude the interaction by ensuring the user doesn't need further assistance and provide a summary of the next steps or decisions made.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "18",
+            {
+                "resource": {
+                    "id": "d1a2t3a4-5678-90bc-def1-23456789abcd",
+                    "name": "CarDatabaseWorker"
+                },
+                "attribute": {
+                    "value": "Your vehicle is currently in transit and is expected to be delivered by next week.",
+                    "task": "Provide updates and tracking information on vehicle delivery status",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "19",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "gather_user_preferences_and_needs"
+                },
+                "attribute": {
+                    "value": "35",
+                    "task": "Gather comprehensive information about the user's automotive preferences and needs, such as vehicle type, preferred features, budget, and financing options.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "20",
+            {
+                "resource": {
+                    "id": "c4a5d6e7-8901-23f4-5678-90123456789c",
+                    "name": "CarAdvisorWorker"
+                },
+                "attribute": {
+                    "value": "Based on your preferences, we recommend the following vehicle options that suit your needs and budget.",
+                    "task": "Analyze the user's preferences using CarAdvisorWorker to provide personalized automotive recommendations and insights.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "21",
+            {
+                "resource": {
+                    "id": "m1k2t3i4-5678-90ab-cdef-123456789mkt",
+                    "name": "car_tools-market_intelligence-market_intelligence"
+                },
+                "attribute": {
+                    "value": "Our market analysis suggests these vehicles are currently popular and offer great value for your budget.",
+                    "task": "Perform market analysis and offer insights about current automotive market trends and the best vehicle options that match the user's needs.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "22",
+            {
+                "resource": {
+                    "id": "d1e2a3l4-5678-90ab-cdef-123456789dea",
+                    "name": "car_tools-dealer_contact-dealer_contact"
+                },
+                "attribute": {
+                    "value": "Here are some local dealerships you can contact, and I can help you set up a test drive or an appointment if you'd like.",
+                    "task": "Facilitate a connection with local car dealerships by identifying nearby dealers, using car_tools-dealer_contact to provide contact information, location data, and set up appointments or test drives.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "23",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Do you need any more help, or are you ready to proceed with contacting the dealerships?",
+                    "task": "Confirm with the user if they need further assistance or are ready to proceed with the dealership connections and provide necessary instructions or support.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "24",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "gather_user_preferences_and_needs"
+                },
+                "attribute": {
+                    "value": "35",
+                    "task": "Gather comprehensive information about the user's automotive preferences and needs, such as vehicle type, preferred features, budget, and financing options, using the 'gather_user_preferences_and_needs' resource.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "25",
+            {
+                "resource": {
+                    "id": "c4a5d6e7-8901-23f4-5678-90123456789c",
+                    "name": "CarAdvisorWorker"
+                },
+                "attribute": {
+                    "value": "Based on your preferences, I recommend checking out these repair services that match your requirements.",
+                    "task": "Analyze user preferences and coordinate database queries to provide personalized automotive repair recommendations using the 'CarAdvisorWorker'.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "26",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "troubleshooting_and_issue_resolution"
+                },
+                "attribute": {
+                    "value": "47",
+                    "task": "Use 'troubleshooting_and_issue_resolution' to assist users with any automotive issues, suggesting troubleshooting steps or arranging repair services.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "27",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "connect_with_local_dealers"
+                },
+                "attribute": {
+                    "value": "43",
+                    "task": "Facilitate connecting the user with local dealers for repair services if needed by using the 'connect_with_local_dealers'.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "28",
+            {
+                "resource": {
+                    "id": "d1a2t3a4-5678-90bc-def1-23456789abcd",
+                    "name": "CarDatabaseWorker"
+                },
+                "attribute": {
+                    "value": "I can help with any vehicle search or dealer management related queries you might have.",
+                    "task": "Utilize 'CarDatabaseWorker' to handle any vehicle search or dealer management related queries if additional information is required.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "29",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Is there anything else I can assist you with today?",
+                    "task": "Confirm with the user if there are any other services or assistance they need and conclude the interaction.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "30",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "gather_user_preferences_and_needs"
+                },
+                "attribute": {
+                    "value": "35",
+                    "task": "Inquire about the specific automotive issue the user is experiencing and gather detailed information about the user's vehicle type and preferences.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "31",
+            {
+                "resource": {
+                    "id": "f1e2d3c4-b5a6-9870-5432-16789fedcba0",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "Based on the issue you've described, here are some steps that might help resolve it.",
+                    "task": "Provide initial troubleshooting steps based on internal documentation to address the specific issue described by the user.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "32",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Did the troubleshooting steps help resolve your issue or do you need further assistance?",
+                    "task": "Ask the user if the initial troubleshooting steps resolved their issue or if further assistance is required.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "33",
+            {
+                "resource": {
+                    "id": "87654321-fed0-9abc-4321-fedcba9876543",
+                    "name": "SearchWorker"
+                },
+                "attribute": {
+                    "value": "Let me find some additional advice or repair options for your issue.",
+                    "task": "If further help is needed, perform a real-time search for additional troubleshooting advice or coordinate with local repair services.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "34",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "troubleshooting_and_issue_resolution"
+                },
+                "attribute": {
+                    "value": "47",
+                    "task": "Confirm the resolution of the issue or provide information on next steps such as arranging a repair service.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "35",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Can you share your automotive preferences and needs with me?",
+                    "task": "Prompt user for their automotive preferences and needs.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "36",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "What type of vehicle are you interested in? For example, a sedan, SUV, or truck?",
+                    "task": "Ask about the type of vehicle they are interested in (e.g., sedan, SUV, truck, etc.).",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "37",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Are there any specific features or specifications you prefer, such as hybrid capabilities, color preferences, or safety features?",
+                    "task": "Inquire about specific features or specifications they prefer (e.g., hybrid, color, safety features).",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "38",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Could you tell me about your budget range and any financing preferences you have?",
+                    "task": "Determine their budget range and financing preferences.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "39",
+            {
+                "resource": {
+                    "id": "c4a5d6e7-8901-23f4-5678-90123456789c",
+                    "name": "CarAdvisorWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Analyze and provide market insights based on user preferences.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "40",
+            {
+                "resource": {
+                    "id": "m1k2t3i4-5678-90ab-cdef-123456789mkt",
+                    "name": "car_tools-market_intelligence-market_intelligence"
+                },
+                "attribute": {
+                    "value": "Based on the current market trends, SUVs have a high demand and their prices are expected to rise in the next quarter.",
+                    "task": "Research current market trends for the specified vehicle category.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "41",
+            {
+                "resource": {
+                    "id": "c1o2m3p4-5678-90ab-cdef-123456789abc",
+                    "name": "car_tools-car_compare-car_compare"
+                },
+                "attribute": {
+                    "value": "Here are the comparisons for vehicle models within your budget: Model A vs. Model B, considering features and price efficiency.",
+                    "task": "Compare vehicle options within the user's budget.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "42",
+            {
+                "resource": {
+                    "id": "d1a2t3a4-5678-90bc-def1-23456789abcd",
+                    "name": "CarDatabaseWorker"
+                },
+                "attribute": {
+                    "value": "The best value vehicle options for you include Model C and Model D, which are known for their reliability and high resale value.",
+                    "task": "Identify best value options based on reliability, resale value, and user reviews.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "43",
+            {
+                "resource": {
+                    "id": "c4a5d6e7-8901-23f4-5678-90123456789c",
+                    "name": "CarAdvisorWorker"
+                },
+                "attribute": {
+                    "value": "Let's find the best local dealers for your preferred vehicle.",
+                    "task": "Connect user to local automotive dealers based on preferences.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "44",
+            {
+                "resource": {
+                    "id": "d1a2t3a4-5678-90bc-def1-23456789abcd",
+                    "name": "CarDatabaseWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Identify nearby dealers with the desired inventory.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "45",
+            {
+                "resource": {
+                    "id": "d1e2a3l4-5678-90ab-cdef-123456789dea",
+                    "name": "car_tools-dealer_contact-dealer_contact"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Contact dealers for the availability of selected vehicles.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "46",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Would you like to schedule an appointment or a test drive with the dealer?",
+                    "task": "Schedule appointments or test drives if applicable.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "47",
+            {
+                "resource": {
+                    "id": "c4a5d6e7-8901-23f4-5678-90123456789c",
+                    "name": "CarAdvisorWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Resolve user automotive issues through troubleshooting and repair service arrangements.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "48",
+            {
+                "resource": {
+                    "id": "d1a2t3a4-5678-90bc-def1-23456789abcd",
+                    "name": "CarDatabaseWorker"
+                },
+                "attribute": {
+                    "value": "Please provide details regarding the issues you are experiencing with your vehicle so we can help diagnose the problem.",
+                    "task": "Identify and diagnose any reported issues with the vehicle.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "49",
+            {
+                "resource": {
+                    "id": "12345678-9abc-def0-1234-56789abcdef1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Based on the diagnosis, here are the troubleshooting steps you can follow to resolve the issue with your vehicle.",
+                    "task": "Provide detailed troubleshooting steps to the user.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "50",
+            {
+                "resource": {
+                    "id": "c1a2r3o4-5678-90ab-cdef-123456789car",
+                    "name": "car_tools-car_order-car_order"
+                },
+                "attribute": {
+                    "value": "Would you like me to assist in scheduling a repair service for your vehicle?",
+                    "task": "If necessary, assist in scheduling repair services.",
+                    "directed": false
+                }
+            }
+        ]
+    ],
+    "edges": [
+        [
+            "0",
+            "1",
+            {
+                "intent": "User wants a customized vehicle recommendation",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "1",
+            "2",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "2",
+            "3",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "3",
+            "4",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "4",
+            "5",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "6",
+            {
+                "intent": "User is seeking market analysis and insights",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "6",
+            "7",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "7",
+            "8",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "8",
+            "9",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "9",
+            "10",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "11",
+            {
+                "intent": "User needs pricing and financing information",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "11",
+            "12",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "12",
+            "13",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "13",
+            "14",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "14",
+            "15",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "15",
+            "16",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "16",
+            "17",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "18",
+            {
+                "intent": "User desires to track vehicle delivery status",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "19",
+            {
+                "intent": "User wants to connect with local dealers",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "19",
+            "20",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "20",
+            "21",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "21",
+            "22",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "22",
+            "23",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "24",
+            {
+                "intent": "User has specific automotive repair inquiries",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "24",
+            "25",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "25",
+            "26",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "26",
+            "27",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "27",
+            "28",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "28",
+            "29",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "30",
+            {
+                "intent": "User is experiencing automotive issues",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "30",
+            "31",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "31",
+            "32",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "32",
+            "33",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "33",
+            "34",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "35",
+            "36",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "35",
+            "37",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "35",
+            "38",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "39",
+            "40",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "39",
+            "41",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "39",
+            "42",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "43",
+            "44",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "43",
+            "45",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "43",
+            "46",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "47",
+            "48",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "47",
+            "49",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "47",
+            "50",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ]
+    ],
+    "role": "Professional Automotive Consultant",
+    "user_objective": "The consultant provides comprehensive automotive services based on user's automotive preferences and needs.",
+    "builder_objective": "When users have specific automotive problems (refunds, repairs, orders), provide direct helpful responses. When users seek recommendations, collect their key preferences (budget, vehicle type, usage) and provide suitable options. Always give actionable next steps.",
+    "domain": "Automotive Sales, Consulting & Vehicle Advisory",
+    "intro": "Hello! I'm your automotive consultant ready to help with vehicle recommendations, market analysis, pricing information, order tracking, dealer connections, repair services, and resolving automotive issues. I provide immediate actionable solutions and next steps for all your automotive needs. How can I assist you today?",
+    "task_docs": [
+        {
+            "source": "https://www.cars.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.carmax.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.edmunds.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.kbb.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.autotrader.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.toyota.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.honda.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.ford.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.bmwusa.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.tesla.com/",
+            "type": "url",
+            "num": 5
+        }
+    ],
+    "rag_docs": [
+        {
+            "source": "https://www.cars.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.carmax.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.edmunds.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.motortrend.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.caranddriver.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.autoblog.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.iihs.org/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.nhtsa.gov/",
+            "type": "url",
+            "num": 5
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        {
+            "id": "c4a5d6e7-8901-23f4-5678-90123456789c",
+            "name": "CarAdvisorWorker",
+            "path": "car_advisor_worker.py",
+            "description": "Comprehensive car advisor providing unified vehicle recommendations, analysis, and purchase planning with multi-phase workflow"
+        },
+        {
+            "id": "f1e2d3c4-b5a6-9870-5432-16789fedcba0",
+            "name": "FaissRAGWorker",
+            "path": "faiss_rag_worker.py",
+            "description": "RAG-based information retrieval for automotive knowledge"
+        },
+        {
+            "id": "12345678-9abc-def0-1234-56789abcdef1",
+            "name": "MessageWorker",
+            "path": "message_worker.py",
+            "description": "Message generation and delivery for user communication"
+        },
+        {
+            "id": "87654321-fed0-9abc-4321-fedcba9876543",
+            "name": "SearchWorker",
+            "path": "search_worker.py",
+            "description": "Search functionality across automotive databases"
+        },
+        {
+            "id": "d1a2t3a4-5678-90bc-def1-23456789abcd",
+            "name": "CarDatabaseWorker",
+            "path": "car_database_worker.py",
+            "description": "Specialized automotive database operations including vehicle search, dealer management, inventory browsing, and order tracking"
+        }
+    ],
+    "tools": [
+        {
+            "id": "c1o2m3p4-5678-90ab-cdef-123456789abc",
+            "name": "car_compare",
+            "path": "car_tools/car_compare.py",
+            "description": "Compare parameters and characteristics of multiple car models with detailed analysis"
+        },
+        {
+            "id": "m1k2t3i4-5678-90ab-cdef-123456789mkt",
+            "name": "market_intelligence",
+            "path": "car_tools/market_intelligence.py",
+            "description": "Market intelligence and price trend analysis for automotive market"
+        },
+        {
+            "id": "d1e2a3l4-5678-90ab-cdef-123456789dea",
+            "name": "dealer_contact",
+            "path": "car_tools/dealer_contact.py",
+            "description": "Comprehensive dealer finder with contact information, location data, distances, services, ratings, and price negotiation analysis - supports contact info lookup, nearby dealer search, comprehensive dealer analysis, and price negotiation strategies"
+        },
+        {
+            "id": "c1a2r3o4-5678-90ab-cdef-123456789car",
+            "name": "car_order",
+            "path": "car_tools/car_order.py",
+            "description": "Comprehensive car order, customer service, and inventory browsing tool including order creation, refunds, order support, repair services, customer service inquiries, and real vehicle inventory browsing with VINs and availability"
+        }
+    ],
+    "nluapi": "",
+    "slotfillapi": ""
+}

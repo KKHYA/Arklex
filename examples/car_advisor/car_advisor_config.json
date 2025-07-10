@@ -1,0 +1,160 @@
+{
+    "role": "Professional Automotive Consultant",
+    "user_objective": "The consultant provides comprehensive automotive services based on user's automotive preferences and needs.",
+    "builder_objective": "When users have specific automotive problems (refunds, repairs, orders), provide direct helpful responses. When users seek recommendations, collect their key preferences (budget, vehicle type, usage) and provide suitable options. Always give actionable next steps.",
+    "domain": "Automotive Sales, Consulting & Vehicle Advisory",
+    "intro": "Hello! I'm your automotive consultant ready to help with vehicle recommendations, market analysis, pricing information, order tracking, dealer connections, repair services, and resolving automotive issues. I provide immediate actionable solutions and next steps for all your automotive needs. How can I assist you today?",
+    "task_docs": [
+        {
+            "source": "https://www.cars.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.carmax.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.edmunds.com/",
+            "type": "url", 
+            "num": 5
+        },
+        {
+            "source": "https://www.kbb.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.autotrader.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.toyota.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.honda.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.ford.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.bmwusa.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.tesla.com/",
+            "type": "url",
+            "num": 5
+        }
+    ],
+    "rag_docs": [
+        {
+            "source": "https://www.cars.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.carmax.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.edmunds.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.motortrend.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.caranddriver.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.autoblog.com/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.iihs.org/",
+            "type": "url",
+            "num": 5
+        },
+        {
+            "source": "https://www.nhtsa.gov/",
+            "type": "url",
+            "num": 5
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        {
+            "id": "c4a5d6e7-8901-23f4-5678-90123456789c",
+            "name": "CarAdvisorWorker",
+            "path": "car_advisor_worker.py",
+            "description": "Comprehensive car advisor providing unified vehicle recommendations, analysis, and purchase planning with multi-phase workflow"
+        },
+        {
+            "id": "f1e2d3c4-b5a6-9870-5432-16789fedcba0",
+            "name": "FaissRAGWorker",
+            "path": "faiss_rag_worker.py",
+            "description": "RAG-based information retrieval for automotive knowledge"
+        },
+        {
+            "id": "12345678-9abc-def0-1234-56789abcdef1",
+            "name": "MessageWorker",
+            "path": "message_worker.py",
+            "description": "Message generation and delivery for user communication"
+        },
+        {
+            "id": "87654321-fed0-9abc-4321-fedcba9876543",
+            "name": "SearchWorker",
+            "path": "search_worker.py",
+            "description": "Search functionality across automotive databases"
+        },
+        {
+            "id": "d1a2t3a4-5678-90bc-def1-23456789abcd",
+            "name": "CarDatabaseWorker",
+            "path": "car_database_worker.py",
+            "description": "Specialized automotive database operations including vehicle search, dealer management, inventory browsing, and order tracking"
+        }
+    ],
+    "tools": [
+        {
+            "id": "c1o2m3p4-5678-90ab-cdef-123456789abc",
+            "name": "car_compare", 
+            "path": "car_tools/car_compare.py",
+            "description": "Compare parameters and characteristics of multiple car models with detailed analysis"
+        },
+        {
+            "id": "m1k2t3i4-5678-90ab-cdef-123456789mkt",
+            "name": "market_intelligence",
+            "path": "car_tools/market_intelligence.py",
+            "description": "Market intelligence and price trend analysis for automotive market"
+        },
+        {
+            "id": "d1e2a3l4-5678-90ab-cdef-123456789dea",
+            "name": "dealer_contact",
+            "path": "car_tools/dealer_contact.py",
+            "description": "Comprehensive dealer finder with contact information, location data, distances, services, ratings, and price negotiation analysis - supports contact info lookup, nearby dealer search, comprehensive dealer analysis, and price negotiation strategies"
+        },
+        {
+            "id": "c1a2r3o4-5678-90ab-cdef-123456789car",
+            "name": "car_order",
+            "path": "car_tools/car_order.py",
+            "description": "Comprehensive car order, customer service, and inventory browsing tool including order creation, refunds, order support, repair services, customer service inquiries, and real vehicle inventory browsing with VINs and availability"
+        }
+    ]
+} 

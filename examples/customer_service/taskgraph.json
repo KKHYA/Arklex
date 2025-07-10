@@ -1,0 +1,1455 @@
+{
+    "nodes": [
+        [
+            "0",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Hello! I'm your Customer Service Assistant. How can I assist you with your inquiries today? Whether you have questions about our products, need help with a transaction, or want to learn more about our policies, I'm here to help!",
+                    "task": "start message",
+                    "directed": false
+                },
+                "limit": 1,
+                "type": "start"
+            }
+        ],
+        [
+            "1",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "information_gathering"
+                },
+                "attribute": {
+                    "value": "36",
+                    "task": "Use information_gathering to ask the user for basic information such as their name and specific details related to their robot purchasing inquiry.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "2",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "product_and_service_information_provision"
+                },
+                "attribute": {
+                    "value": "39",
+                    "task": "Utilize product_and_service_information_provision to provide detailed information on Richtech Robotics products, including product types, capabilities, and features.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "3",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "Based on your specific question, here's the relevant documentation on our company policies and product FAQs.",
+                    "task": "With the help of FaissRAGWorker, provide additional information on company policies, product FAQs, and any other relevant documentation if the user has specific questions.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "4",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "customization_and_pricing_inquiry"
+                },
+                "attribute": {
+                    "value": "43",
+                    "task": "Through customization_and_pricing_inquiry, handle any inquiries regarding pricing and customization options, specifying factors that influence pricing.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "5",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Do you need further assistance with integration and deployment guidance or troubleshooting and support?",
+                    "task": "Ask if the user needs further assistance, such as integration_and_deployment_guidance or troubleshooting_and_support, and proceed accordingly.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "6",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Welcome! Let me give you a brief overview of our robot rental options.",
+                    "task": "Use MessageWorker to welcome the user and briefly explain the options for robot rentals to set the context.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "7",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "information_gathering"
+                },
+                "attribute": {
+                    "value": "36",
+                    "task": "Employ information_gathering to ask the user for basic information and specific details regarding what they are looking for in a robot rental.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "8",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "Here is some detailed information on our available robot rental options, including their capabilities and our policies.",
+                    "task": "Use FaissRAGWorker to provide detailed information on the available robot rental options, including types, capabilities, and policies.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "9",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "customization_and_pricing_inquiry"
+                },
+                "attribute": {
+                    "value": "43",
+                    "task": "Through customization_and_pricing_inquiry, ask if the user has any specific customization needs or pricing inquiries.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "10",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "troubleshooting_and_support"
+                },
+                "attribute": {
+                    "value": "47",
+                    "task": "If the user needs additional information or support, use troubleshooting_and_support to address potential issues or provide further assistance.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "11",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Are you ready to proceed with the rental, or do you need more guidance on integration or deployment?",
+                    "task": "Use MessageWorker to confirm if the user is ready to proceed with the rental or needs more guidance on integration or deployment.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "12",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Here are the instructions for the next steps, such as completing the rental transaction or contacting support for complex inquiries.",
+                    "task": "Provide instructions for the next steps, such as completing the rental transaction or contacting support for complex inquiries, using MessageWorker.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "13",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "information_gathering"
+                },
+                "attribute": {
+                    "value": "36",
+                    "task": "Information Gathering: Ask the user for basic information necessary to address the issue, such as their robot model, any error codes they're seeing, and the symptoms of the problem.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "14",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "troubleshooting_and_support"
+                },
+                "attribute": {
+                    "value": "47",
+                    "task": "Troubleshooting and Support: Utilize the FaissRAGWorker to provide basic troubleshooting steps based on the company's internal documentation relevant to the user's problem.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "15",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "It seems that the troubleshooting did not resolve your issue. Here's some information on additional service options we can provide.",
+                    "task": "Product and Service Information Provision: If the troubleshooting steps don't resolve the issue, use the FaissRAGWorker to provide information on service options or escalate to technical support.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "16",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "customization_and_pricing_inquiry"
+                },
+                "attribute": {
+                    "value": "43",
+                    "task": "Customization and Pricing Inquiry: Offer details on any potential costs associated with repairs or maintenance, if applicable.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "17",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "integration_and_deployment_guidance"
+                },
+                "attribute": {
+                    "value": "51",
+                    "task": "Integration and Deployment Guidance: If the issue might be related to setup or integration, provide relevant guidance or suggest consulting with an integration specialist.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "18",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Has your issue been resolved, or do you need further assistance? Please let us know how we can assist you further.",
+                    "task": "Close the Interaction: Confirm with the user if their issue has been resolved or if they need further assistance, and provide next steps if necessary.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "19",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "information_gathering"
+                },
+                "attribute": {
+                    "value": "36",
+                    "task": "Begin by gathering basic information from the user, such as their name, contact information, and specific details related to their inquiry about pricing and customization.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "20",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Could you let us know which specific product or service you are interested in, and if you have any particular customization needs?",
+                    "task": "Use MessageWorker to ask the user about the specific product or service they are interested in, along with any customization needs and intended use case.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "21",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Employ the FaissRAGWorker to look up relevant information in the company's internal documentation about pricing ranges and available customization options for the specified product or use case.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "22",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Here are the details on pricing and customization options for the product you specified. Do you need further clarification on any points?",
+                    "task": "Deliver the information on pricing and customization options to the user using the MessageWorker and ask if they need further clarification or details on any points.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "23",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "If the user has additional questions or needs further details, utilize the FaissRAGWorker to gather any additional information and respond appropriately.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "24",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Do you have all the information you need? Would you like assistance with the next steps, such as speaking with a sales representative or starting the purchase process?",
+                    "task": "Conclude by confirming if the user has all the needed information and offer assistance with the next steps, such as connecting them with a sales representative or helping with purchase formalities.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "25",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "information_gathering"
+                },
+                "attribute": {
+                    "value": "36",
+                    "task": "Begin by gathering basic information about the user's business environment and their specific goals for deploying robotics. Use the information_gathering task.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "26",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "product_and_service_information_provision"
+                },
+                "attribute": {
+                    "value": "39",
+                    "task": "Provide detailed information about Richtech Robotics products and services that might be relevant to the user's business needs and objectives using the product_and_service_information_provision task.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "27",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "customization_and_pricing_inquiry"
+                },
+                "attribute": {
+                    "value": "43",
+                    "task": "Inquire if the user needs guidance on customization options and the associated pricing for their specific use case using the customization_and_pricing_inquiry task.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "28",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "integration_and_deployment_guidance"
+                },
+                "attribute": {
+                    "value": "51",
+                    "task": "Offer comprehensive guidance on how to integrate and deploy robotics within the user's business environment using the integration_and_deployment_guidance task. Include setup requirements and operational considerations.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "29",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "troubleshooting_and_support"
+                },
+                "attribute": {
+                    "value": "47",
+                    "task": "Ask if the user requires further assistance with troubleshooting or ongoing support using the troubleshooting_and_support task.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "30",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Have all your inquiries been resolved, or is there anything else we can assist you with?",
+                    "task": "Conclude by ensuring all user inquiries are resolved and asking if there are any additional questions or follow-up actions needed.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "31",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "information_gathering"
+                },
+                "attribute": {
+                    "value": "36",
+                    "task": "Identify the user's need by asking for basic information and specific details related to their inquiry about using robots for events and marketing.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "32",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Utilize the FaissRAGWorker to provide detailed information about Richtech Robotics products and services tailored to the user's needs.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "33",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "customization_and_pricing_inquiry"
+                },
+                "attribute": {
+                    "value": "43",
+                    "task": "Ask the user if they require more information on customization options and pricing for their specific use case.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "34",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "integration_and_deployment_guidance"
+                },
+                "attribute": {
+                    "value": "51",
+                    "task": "If requested, provide guidance on integration and deployment tailored to the user's business environment and event/marketing goals.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "35",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "troubleshooting_and_support"
+                },
+                "attribute": {
+                    "value": "47",
+                    "task": "Confirm if the user needs any additional support or assistance, such as troubleshooting or further consultations.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "36",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Can you please provide your name and contact information, so we can assist you further?",
+                    "task": "Collect necessary details from the user to proceed.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "37",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "May I have your name and contact information, please?",
+                    "task": "Ask for the user's name and contact information.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "38",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Could you please specify the type of robot or service you are inquiring about?",
+                    "task": "Identify the user's specific inquiry or issue, such as robot type or service required.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "39",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "Richtech Robotics offers a wide range of robotic solutions designed to enhance efficiency and productivity across various industries.",
+                    "task": "Provide information about Richtech Robotics' offerings.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "40",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "We offer delivery robots for transporting goods, cleaning robots for sanitation tasks, and multipurpose robots that can be customized for different roles.",
+                    "task": "List available robot types and their primary functions (e.g., delivery, cleaning, multipurpose).",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "41",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "Customers can choose to either purchase or rent our robots. We offer flexible rental plans to suit different business needs.",
+                    "task": "Explain purchase and rental options for robots.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "42",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "Our standard delivery time is approximately 2-4 weeks, depending on the location. Customization options are available to tailor the robots to your specific requirements.",
+                    "task": "Provide information on delivery times and customization possibilities.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "43",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Could you please provide more details about your needs so we can offer the best customization and pricing options?",
+                    "task": "Provide customization and pricing details based on user needs.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "44",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "What is the specific application or need that you are looking to address? Is it for events, daily operations, or marketing purposes?",
+                    "task": "Determine the specific application or need of the user, such as events, daily operations, or marketing.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "45",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "Here are our general pricing guidelines and the factors that might affect the costs.",
+                    "task": "Provide general pricing guidelines and factors affecting costs.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "46",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "These are the customization options we offer and how they might impact the pricing.",
+                    "task": "Inform the user of the available customization options and impact on pricing.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "47",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "I'm here to help you with resolving technical issues.",
+                    "task": "Guide user through resolving technical issues.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "48",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Can you describe the issue you're facing in detail, including any error messages or unusual behavior?",
+                    "task": "Ask user to describe the issue in detail, including any error messages or unusual behavior.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "49",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "Here are some basic troubleshooting steps you can try. You can also refer to our user guides for more detailed instructions.",
+                    "task": "Provide basic troubleshooting steps or refer to user guides.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "50",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "It seems this issue might require advanced intervention. I'll escalate this to our technical support team.",
+                    "task": "Escalate the issue to technical support if it requires advanced intervention.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "51",
+            {
+                "resource": {
+                    "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "I can help guide you through the deployment and integration of robots.",
+                    "task": "Guide users on deploying and integrating robots.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "52",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "For deploying robots, you'll need to consider space, infrastructure, and network setup requirements, which can vary depending on the specific type of robot and your operational environment.",
+                    "task": "Explain deployment requirements such as space, infrastructure, and network setup.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "53",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "We offer various training and support resources that cover the operation of our robots. Let me know if you need more details on these resources.",
+                    "task": "Provide information on operational training and support resources.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "54",
+            {
+                "resource": {
+                    "id": "FaissRAGWorker",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "There are several strategies for integrating robots with existing business systems. These depend on your current processes and systems. I can provide detailed documentation on these strategies.",
+                    "task": "Discuss integration strategies with existing business systems and processes.",
+                    "directed": false
+                }
+            }
+        ]
+    ],
+    "edges": [
+        [
+            "0",
+            "1",
+            {
+                "intent": "User inquires about robot purchasing options",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "1",
+            "2",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "2",
+            "3",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "3",
+            "4",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "4",
+            "5",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "6",
+            {
+                "intent": "User inquires about robot rental services",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "6",
+            "7",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "7",
+            "8",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "8",
+            "9",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "9",
+            "10",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "10",
+            "11",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "11",
+            "12",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "13",
+            {
+                "intent": "User seeks troubleshooting and support for their robots",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "13",
+            "14",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "14",
+            "15",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "15",
+            "16",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "16",
+            "17",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "17",
+            "18",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "19",
+            {
+                "intent": "User asks about customization and pricing for specific use cases",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "19",
+            "20",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "20",
+            "21",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "21",
+            "22",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "22",
+            "23",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "23",
+            "24",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "25",
+            {
+                "intent": "User wants information on integration and deployment of robotics in business",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "25",
+            "26",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "26",
+            "27",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "27",
+            "28",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "28",
+            "29",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "29",
+            "30",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "31",
+            {
+                "intent": "User inquires about robot capabilities for events and marketing",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "31",
+            "32",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "32",
+            "33",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "33",
+            "34",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "34",
+            "35",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "36",
+            "37",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "36",
+            "38",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "39",
+            "40",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "39",
+            "41",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "39",
+            "42",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "43",
+            "44",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "43",
+            "45",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "43",
+            "46",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "47",
+            "48",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "47",
+            "49",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "47",
+            "50",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "51",
+            "52",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "51",
+            "53",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "51",
+            "54",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ]
+    ],
+    "role": "customer service assistant",
+    "user_objective": "The customer service assistant helps users with customer service inquiries. It can provide information about products, services, and policies, as well as help users resolve issues and complete transactions.",
+    "builder_objective": "The customer service assistant helps to request customer's contact information.",
+    "domain": "robotics and automation",
+    "intro": "Richtech Robotics's headquarter is in Las Vegas; the other office is in Austin. Richtech Robotics provide worker robots (ADAM, ARM, ACE), delivery robots (Matradee, Matradee X, Matradee L, Richie), cleaning robots (DUST-E SX, DUST-E MX) and multipurpose robots (skylark). Their products are intended for business purposes, but not for home purpose; the ADAM robot is available for purchase and rental for multiple purposes. This robot bartender makes tea, coffee and cocktails. Richtech Robotics also operate the world's first robot milk tea shop, ClouTea, in Las Vegas (www.cloutea.com), where all milk tea beverages are prepared by the ADAM robot. The delivery time will be one month for the delivery robot, 2 weeks for standard ADAM, and two months for commercial cleaning robot. ",
+    "task_docs": [
+        {
+            "source": "https://www.richtechrobotics.com/",
+            "type": "url",
+            "num": 20
+        }
+    ],
+    "rag_docs": [
+        {
+            "source": "https://www.richtechrobotics.com/",
+            "type": "url",
+            "num": 20
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        {
+            "id": "FaissRAGWorker",
+            "name": "FaissRAGWorker",
+            "path": "faiss_rag_worker.py"
+        },
+        {
+            "id": "26bb6634-3bee-417d-ad75-23269ac17bc3",
+            "name": "MessageWorker",
+            "path": "message_worker.py"
+        },
+        {
+            "id": "9c15af81-04b3-443e-be04-a3522124b905",
+            "name": "SearchWorker",
+            "path": "search_worker.py"
+        }
+    ],
+    "tools": [],
+    "nluapi": "",
+    "slotfillapi": ""
+}

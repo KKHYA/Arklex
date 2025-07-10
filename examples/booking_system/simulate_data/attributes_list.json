@@ -1,0 +1,72 @@
+[
+    {
+        "goal": "Goal: Request a refund for a group ticket purchase from Irish Repertory Theatre, emphasizing dissatisfaction with the recent performance's portrayal of the Irish-American experience, which did not meet expectations based on previous experiences with competitor productions.",
+        "product_experience_level": "used competitor product",
+        "customer_type": "returning customer",
+        "persona": "aggressive",
+        "current_webpage": "product page",
+        "modality": "text",
+        "communication_type": "incoming",
+        "discovery_type": "social media",
+        "buying_behavior": "economic",
+        "budget": "moderate budget",
+        "purchase_history": "group ticket buyer",
+        "location": "Dublin"
+    },
+    {
+        "goal": "Goal: Track the delivery status of my recent single ticket purchase for an upcoming performance at the Irish Repertory Theatre, ensuring it aligns with my quality-oriented preferences and low budget constraints as a new prospect exploring Irish-American theatrical works.",
+        "product_experience_level": "new to this product",
+        "customer_type": "new prospect",
+        "persona": "passive",
+        "current_webpage": "product page",
+        "modality": "text",
+        "communication_type": "incoming",
+        "discovery_type": "search engine results",
+        "buying_behavior": "quality oriented",
+        "budget": "low budget",
+        "purchase_history": "single ticket purchase",
+        "location": "Dublin"
+    },
+    {
+        "goal": "Goal: Report an issue with the Irish Repertory Theatre's online ticketing system, specifically regarding difficulties encountered while trying to purchase a season subscription from the product page. As a new prospect and current season subscription holder from Boston, I am seeking a resolution to ensure a seamless experience for future purchases.",
+        "product_experience_level": "new to this product",
+        "customer_type": "new prospect",
+        "persona": "aggressive",
+        "current_webpage": "product page",
+        "modality": "text",
+        "communication_type": "outgoing",
+        "discovery_type": "social media",
+        "buying_behavior": "quality oriented",
+        "budget": "low budget",
+        "purchase_history": "season subscription holder",
+        "location": "Boston"
+    },
+    {
+        "goal": "Goal: Report an issue with the online ticket purchasing system for a group booking at Irish Repertory Theatre, as a new prospect from Dublin who values quality and is exploring options for experiencing Irish and Irish-American theater on a budget.",
+        "product_experience_level": "new to this product",
+        "customer_type": "new prospect",
+        "persona": "neutral",
+        "current_webpage": "home page",
+        "modality": "text",
+        "communication_type": "incoming",
+        "discovery_type": "search engine results",
+        "buying_behavior": "quality oriented",
+        "budget": "low budget",
+        "purchase_history": "group ticket buyer",
+        "location": "Dublin"
+    },
+    {
+        "goal": "Goal: Request a refund for a group ticket purchase for a recent performance at the Irish Repertory Theatre, as a returning customer who is new to this product and discovered it through a third-party website. The request will be made via text communication, with a focus on economic considerations due to a low budget, and will be initiated from the product page while maintaining a neutral tone.",
+        "product_experience_level": "new to this product",
+        "customer_type": "returning customer",
+        "persona": "neutral",
+        "current_webpage": "product page",
+        "modality": "text",
+        "communication_type": "outgoing",
+        "discovery_type": "third party website",
+        "buying_behavior": "economic",
+        "budget": "low budget",
+        "purchase_history": "group ticket buyer",
+        "location": "New York City"
+    }
+]

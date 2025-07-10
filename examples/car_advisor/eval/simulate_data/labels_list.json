@@ -1,0 +1,87 @@
+[
+    {
+        "goal": "order tracking",
+        "matched_attribute": {
+            "goal": "Goal: Track the order status of my new Toyota Hybrid EV, ensuring it aligns with Toyota's Beyond Zero Vision for sustainability and carbon neutrality. As a new prospect with a high budget and a focus on quality, I am eager to understand how my purchase contributes to Toyota's environmental goals.",
+            "product_experience_level": "new to this product",
+            "customer_type": "new prospect",
+            "persona": "neutral",
+            "current_webpage": "about page",
+            "modality": "text",
+            "communication_type": "incoming",
+            "discovery_type": "third party website",
+            "buying_behavior": "quality oriented",
+            "budget": "high budget",
+            "purchase_history": "'Toyota Hybrid EV'",
+            "location": "Florida"
+        }
+    },
+    {
+        "goal": "request repair",
+        "matched_attribute": {
+            "goal": "Given your profile and the company information, your goal can be rewritten as follows:\n\n\"As a returning customer who recently purchased a Toyota Crown Signia, I am reaching out to request repair services for my vehicle. I have previously used a competitor's product and am now seeking a quality-oriented solution within a low budget. I discovered your services through social media and am currently on your homepage. Please provide immediate assistance and actionable steps to address my repair needs.\"",
+            "product_experience_level": "used competitor product",
+            "customer_type": "returning customer",
+            "persona": "aggressive",
+            "current_webpage": "home page",
+            "modality": "text",
+            "communication_type": "outgoing",
+            "discovery_type": "social media",
+            "buying_behavior": "quality oriented",
+            "budget": "low budget",
+            "purchase_history": "recent purchase: ['Toyota Crown Signia'",
+            "location": "California"
+        }
+    },
+    {
+        "goal": "product rental",
+        "matched_attribute": {
+            "goal": "Based on your profile and the company's offerings, a more specific goal for interacting with the chatbot could be:\n\n\"As a returning customer with experience using competitor products, I am looking to rent a high-end Toyota SUV, such as the 2025 Toyota Land Cruiser or the 2025 Toyota Sequoia, for an upcoming trip in California. I have a high budget and am interested in exploring the latest features and capabilities of these models. I would like assistance with rental options, pricing, and availability, as well as any special offers or promotions that might apply to my rental.\"",
+            "product_experience_level": "used competitor product",
+            "customer_type": "returning customer",
+            "persona": "aggressive",
+            "current_webpage": "product page",
+            "modality": "text",
+            "communication_type": "outgoing",
+            "discovery_type": "search engine results",
+            "buying_behavior": "economic",
+            "budget": "high budget",
+            "purchase_history": "'Toyota SUV']",
+            "location": "California"
+        }
+    },
+    {
+        "goal": "report product issue",
+        "matched_attribute": {
+            "goal": "Given your profile and the company information, a more specific goal for interacting with the BMW chatbot could be:\n\n\"As a returning customer with experience in hybrid vehicles, I want to report an issue with my recently purchased BMW i4, specifically regarding its battery performance. I am seeking immediate assistance and actionable solutions to resolve this issue, as I have a mid-range budget and prioritize economic efficiency. I am currently located in Florida and would appreciate guidance on the nearest BMW service center for a prompt resolution.\"",
+            "product_experience_level": "used competitor product",
+            "customer_type": "returning customer",
+            "persona": "aggressive",
+            "current_webpage": "home page",
+            "modality": "text",
+            "communication_type": "incoming",
+            "discovery_type": "friend recommendation",
+            "buying_behavior": "economic",
+            "budget": "mid-range budget",
+            "purchase_history": "'Toyota Hybrid EV'",
+            "location": "Florida"
+        }
+    },
+    {
+        "goal": "order tracking",
+        "matched_attribute": {
+            "goal": "Given your profile and the company information, a more specific goal for interacting with the chatbot could be:\n\n\"As a new prospect with a mid-range budget, I am looking to track the order status of a Toyota SUV I recently purchased. I am new to this product and would appreciate detailed guidance on the expected delivery timeline and any additional steps I need to take. I discovered this product through social media and am currently on the product page, seeking assistance via text communication.\"",
+            "product_experience_level": "new to this product",
+            "customer_type": "new prospect",
+            "persona": "neutral",
+            "current_webpage": "product page",
+            "modality": "text",
+            "communication_type": "outgoing",
+            "discovery_type": "social media",
+            "buying_behavior": "economic",
+            "budget": "mid-range budget",
+            "purchase_history": "'Toyota SUV']",
+            "location": "Florida"
+        }
+    }
+]
