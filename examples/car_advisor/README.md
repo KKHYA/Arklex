@@ -1,173 +1,178 @@
 # Car Advisor Agent
 
-A comprehensive AI-powered automotive consultation platform built on the Arklex.AI framework. This advanced agent combines consumer vehicle expertise, high-performance car analysis, professional racing insights, market intelligence, and complete purchasing assistance to provide unparalleled automotive guidance.
+A comprehensive AI-powered automotive consultant built on the Arklex.AI framework. This intelligent agent provides personalized vehicle recommendations, market analysis, dealer connections, repair services, and complete automotive support through a multi-phase workflow system.
 
 ## 🚗 Overview
 
-The Car Advisor Agent is a sophisticated AI system designed to assist users with every aspect of their automotive journey, from initial research to final purchase and beyond. Whether you're looking for a daily commuter, a high-performance sports car, or insights into professional motorsports, this agent delivers expert-level guidance powered by real-time data and comprehensive market intelligence.
+The Car Advisor Agent is a sophisticated automotive consultant that assists users with their complete automotive journey. From initial vehicle research and recommendations to dealer connections, order tracking, and repair services, this agent provides expert guidance powered by real-time data and comprehensive market intelligence.
 
 ## ✨ Key Features
 
-### **Comprehensive Vehicle Analysis**
-- **Advanced Search**: Real-time vehicle search across multiple platforms with API integration
-- **Performance Analysis**: Deep technical analysis of acceleration, handling, braking, and track performance
-- **Market Intelligence**: Real-time pricing trends, demand forecasting, and resale value predictions
-- **Comparison Tools**: Side-by-side vehicle comparisons with detailed specifications and ratings
+### **Intelligent Vehicle Recommendations**
+- **Personalized Analysis**: Comprehensive user preference analysis based on budget, vehicle type, and usage patterns
+- **Multi-Phase Workflow**: Structured approach to gather preferences, analyze options, and provide tailored recommendations
+- **Real-Time Data Integration**: Access to current vehicle inventory, pricing, and availability information
 
-### **AI-Powered Recommendations**
-- **User Preference Analysis**: Comprehensive profiling based on driving habits, lifestyle, and preferences
-- **Personalized Matching**: AI-driven vehicle recommendations tailored to individual needs
-- **Budget Optimization**: Smart recommendations within your budget range with financing options
-- **Future-Proof Suggestions**: Considerations for technology trends and resale value
+### **Market Intelligence & Analysis**
+- **Current Market Trends**: Real-time analysis of automotive market conditions and pricing trends
+- **Comparative Analysis**: Detailed vehicle comparisons with specifications, pricing, and market positioning
+- **Investment Insights**: Resale value predictions and total cost of ownership analysis
 
-### **Professional Racing Insights**
-- **Motorsports Expertise**: Coverage of F1, Rally, NASCAR, Le Mans, and track day events
-- **Technology Transfer**: Insights on how racing technology influences consumer vehicles
-- **Performance Benchmarking**: Track-tested performance data and lap time comparisons
-- **Racing Vehicle Analysis**: Specialized knowledge for track-focused and high-performance vehicles
+### **Dealer Network & Services**
+- **Dealer Connections**: Comprehensive dealer finder with contact information and location data
+- **Service Coordination**: Appointment scheduling for test drives and vehicle inspections
+- **Negotiation Support**: Price negotiation strategies and market-based pricing guidance
 
-### **Complete Purchase Support**
-- **Dealer Network**: Contact and communication with authorized dealers
-- **Price Negotiation**: Expert guidance on pricing strategies and negotiation tactics
-- **Order Processing**: Assistance with vehicle ordering and customization options
-- **Inquiry Tracking**: Complete history of your automotive research and communications
+### **Complete Customer Support**
+- **Order Tracking**: Real-time vehicle delivery status and order management
+- **Repair Services**: Coordination with certified repair facilities and maintenance scheduling
+- **Customer Service**: Comprehensive support for automotive inquiries and issue resolution
+- **Troubleshooting**: Expert diagnostic assistance and problem-solving guidance
+
+## 🛠 Architecture & Components
+
+### **Core Workers**
+- **CarAdvisorWorker**: Unified vehicle recommendation and analysis coordinator
+- **CarDatabaseWorker**: Specialized automotive database operations and inventory management
+- **FaissRAGWorker**: RAG-based information retrieval for automotive knowledge
+- **SearchWorker**: Advanced search functionality across automotive databases
+- **MessageWorker**: Intelligent message generation and user communication
+
+### **Specialized Tools**
+- **car_compare**: Multi-vehicle comparison with detailed parameter analysis
+- **market_intelligence**: Market trend analysis and pricing intelligence
+- **dealer_contact**: Comprehensive dealer finder with ratings and contact management
+- **car_order**: Complete order management, customer service, and inventory browsing
 
 ## 🌐 Data Sources
 
-The agent leverages data from 17+ authoritative automotive sources:
+The system leverages data from 10+ authoritative automotive sources:
 
-### **Consumer Automotive Platforms**
-- Cars.com - Comprehensive vehicle listings and reviews
-- CarMax.com - Used vehicle marketplace and pricing
-- Edmunds.com - Expert reviews and true market value
-- KBB.com - Kelley Blue Book pricing and valuations
-- AutoTrader.com - New and used vehicle marketplace
+### **Consumer Platforms**
+- **Cars.com** - Vehicle listings and market data
+- **CarMax.com** - Used vehicle marketplace and valuations
+- **Edmunds.com** - Expert reviews and pricing analysis
+- **KBB.com** - Kelley Blue Book valuations and market trends
+- **AutoTrader.com** - Comprehensive vehicle marketplace
 
-### **Manufacturer Websites**
-- Toyota, Honda, Ford - Mainstream manufacturers
-- BMW, Tesla - Luxury and electric vehicles
-- Porsche, Ferrari, Lamborghini, McLaren - Exotic and high-performance brands
+### **Manufacturer Networks**
+- **Toyota.com** - Official manufacturer specifications and inventory
+- **Honda.com** - Direct manufacturer information and services
+- **Ford.com** - Complete model lineup and dealer network
+- **BMW.com** - Luxury vehicle specifications and services
+- **Tesla.com** - Electric vehicle technology and direct sales
 
-### **Racing & Motorsports**
-- Formula1.com - F1 technology and performance insights
-- WRC.com - Rally racing and all-terrain performance
-- Motorsport.com - Comprehensive racing coverage
-- SCCA.com - Amateur racing and track day information
-- Mercedes AMG F1, Red Bull Racing - Professional team insights
+### **Automotive Media & Safety**
+- **MotorTrend.com** - Professional reviews and testing data
+- **Car and Driver** - Expert automotive journalism
+- **Autoblog.com** - Industry news and vehicle analysis
+- **IIHS.org** - Safety ratings and crash test data
+- **NHTSA.gov** - Federal safety standards and recalls
 
-### **Automotive Media**
-- MotorTrend, Car and Driver - Professional reviews and testing
-- Road & Track, Autoblog - Performance and enthusiast content
+## 🎯 Core Capabilities
 
-## 🛠 Tools & Capabilities
+### **1. Personalized Vehicle Recommendations**
+- Comprehensive preference gathering and analysis
+- Tailored recommendations based on user needs and budget
+- Market analysis integration for optimal timing and pricing
+- Dealer connection facilitation for next steps
 
-### **Core Analysis Tools**
-1. **User Preference Analyzer** - Comprehensive user profiling and requirement analysis
-2. **Performance Analyzer** - Technical performance evaluation and benchmarking
-3. **Market Intelligence** - Real-time market analysis and trend forecasting
-4. **Advanced Vehicle Search** - Multi-platform search with API integration
+### **2. Market Analysis & Industry Insights**
+- Real-time market trend analysis
+- Pricing intelligence and forecasting
+- Competitive vehicle comparisons
+- Investment and resale value guidance
 
-### **Specialized Tools**
-5. **Racing Insights** - Professional motorsports analysis and technology insights
-6. **Vehicle Comparison** - Detailed side-by-side comparisons
-7. **AI Recommendations** - Personalized vehicle suggestions
-8. **Dealer Contact** - Professional dealer communication and networking
+### **3. Pricing & Financing Guidance**
+- Current market pricing analysis
+- Financing options and payment estimation
+- Price negotiation strategies
+- Total cost of ownership calculations
 
-### **Purchase Support Tools**
-9. **Price Negotiation** - Expert negotiation strategies and market pricing
-10. **Vehicle Ordering** - Complete order processing and customization assistance
+### **4. Order & Delivery Management**
+- Real-time order status tracking
+- Delivery timeline management
+- Customer service coordination
+- Issue resolution and support
+
+### **5. Dealer Network Services**
+- Local dealer identification and contact
+- Service appointment coordination
+- Test drive scheduling
+- Service center recommendations
+
+### **6. Repair & Maintenance Support**
+- Certified repair facility recommendations
+- Maintenance scheduling and coordination
+- Troubleshooting and diagnostic support
+- Warranty and service plan guidance
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Arklex.AI framework installed
-- API keys configured for:
-  - OpenAI/GPT models
-  - Automotive data providers
-  - Search engines and web scraping tools
+- Arklex.AI framework installation
+- API keys for data sources and search services
+- SQLite database for vehicle data storage
 
 ### Installation
 
-1. **Navigate to the car advisor directory**:
+1. **Navigate to the Car Advisor directory**:
    ```bash
    cd examples/car_advisor
    ```
 
-2. **Configure your API keys** in the configuration file:
+2. **Configure your setup**:
    ```bash
-   # Edit car_advisor_config.json with your API credentials
+   # Review and update car_advisor_config.json
+   # Ensure all required API keys are configured
    ```
 
-3. **Initialize the agent**:
-   ```python
-   from arklex import CarAdvisorAgent
-   agent = CarAdvisorAgent(config_path="car_advisor_config.json")
+3. **Initialize the database**:
+   ```bash
+   # The SQLite database (car_advisor_db.sqlite) contains vehicle data
+   # Additional setup may be required based on your data sources
    ```
 
 ### Basic Usage
 
 ```python
-# Vehicle search example
-result = agent.search_vehicles({
-    "budget": "20000-40000",
-    "type": "SUV",
-    "fuel_type": "hybrid",
-    "brand_preference": "Toyota, Honda"
-})
+# Initialize the Car Advisor Agent
+from arklex import CarAdvisorAgent
 
-# Get personalized recommendations
+agent = CarAdvisorAgent(config_path="car_advisor_config.json")
+
+# Get vehicle recommendations
 recommendations = agent.get_recommendations({
-    "driving_style": "commuter",
-    "family_size": 4,
-    "priorities": ["reliability", "fuel_economy", "safety"]
+    "budget": "25000-45000",
+    "vehicle_type": "SUV",
+    "preferences": ["reliability", "fuel_efficiency", "safety"]
 })
 
-# Analyze vehicle performance
-analysis = agent.analyze_performance({
-    "vehicle": "2024 BMW M3 Competition",
-    "focus": "track_performance"
+# Track order status
+order_status = agent.track_order({
+    "order_number": "ABC123",
+    "customer_info": {...}
+})
+
+# Find local dealers
+dealers = agent.find_dealers({
+    "location": "California",
+    "brand": "Toyota",
+    "services": ["sales", "service"]
 })
 ```
 
-## 📊 Use Cases
+## 📊 Task Planning
 
-### **For Car Buyers**
-- First-time buyers seeking guidance and education
-- Experienced buyers looking for market insights and best deals
-- Luxury car enthusiasts requiring specialized knowledge
-- Fleet managers optimizing vehicle selections
+The system operates through seven main task flows:
 
-### **For Automotive Enthusiasts**
-- Track day participants seeking performance vehicles
-- Racing enthusiasts interested in motorsports technology
-- Car collectors evaluating investment potential
-- Tuning enthusiasts understanding modification impacts
-
-### **For Professionals**
-- Automotive journalists requiring market data and trends
-- Dealers seeking competitive intelligence
-- Fleet operators optimizing vehicle selections
-- Insurance professionals assessing vehicle values
-
-## 🎯 Advanced Features
-
-### **Intelligent Learning**
-- Learns from user interactions and preferences
-- Adapts recommendations based on market changes
-- Remembers previous searches and requirements
-- Provides continuity across multiple sessions
-
-### **Real-Time Integration**
-- Live pricing updates from multiple sources
-- Current inventory availability
-- Latest manufacturer incentives and rebates
-- Breaking automotive news and recalls
-
-### **Professional Analysis**
-- Expert-level technical specifications review
-- Performance testing data integration
-- Professional racing insights and comparisons
-- Investment and resale value projections
+1. **Vehicle Recommendation Flow**: Preference gathering → Analysis → Recommendations → Dealer connections
+2. **Market Analysis Flow**: User input → Market research → Insights generation → Comparison tools
+3. **Pricing & Financing Flow**: Requirements → Market analysis → Pricing guidance → Payment estimation
+4. **Order Tracking Flow**: Order lookup → Status updates → Delivery coordination
+5. **Dealer Connection Flow**: Location analysis → Dealer matching → Contact facilitation
+6. **Repair Services Flow**: Issue assessment → Service recommendations → Appointment coordination
+7. **Troubleshooting Flow**: Problem diagnosis → Solution guidance → Service coordination
 
 ## 🔧 Configuration
 
@@ -175,32 +180,73 @@ The agent uses `car_advisor_config.json` for configuration:
 
 ```json
 {
-  "role": "Professional Car Advisor & Performance Analyst",
-  "expertise_areas": [
-    "Consumer vehicles", "High-performance cars", 
-    "Racing technology", "Market analysis"
-  ],
-  "data_sources": [...],
-  "tools": [...],
-  "api_configurations": {...}
+    "role": "Professional Automotive Consultant",
+    "domain": "Automotive Sales, Consulting & Vehicle Advisory",
+    "workers": [
+        {
+            "name": "CarAdvisorWorker",
+            "description": "Unified vehicle recommendations and analysis"
+        },
+        {
+            "name": "CarDatabaseWorker", 
+            "description": "Automotive database operations and inventory"
+        }
+    ],
+    "tools": [
+        {
+            "name": "car_compare",
+            "description": "Multi-vehicle comparison analysis"
+        },
+        {
+            "name": "market_intelligence",
+            "description": "Market trend analysis and pricing intelligence"
+        }
+    ]
 }
 ```
 
-## 📈 Performance Metrics
+## 📈 Evaluation & Testing
 
-- **Response Time**: Sub-second for cached queries, 2-5 seconds for real-time analysis
-- **Data Accuracy**: 95%+ accuracy with real-time validation
-- **Coverage**: 1000+ vehicle models across all major manufacturers
-- **Update Frequency**: Real-time for pricing, daily for specifications
+The system includes comprehensive evaluation capabilities:
 
-## 🤝 Contributing
+- **Simulated Conversations**: 777+ test scenarios covering all major use cases
+- **Goal Completion Tracking**: Automated assessment of task completion rates
+- **Performance Metrics**: Response quality, accuracy, and user satisfaction scoring
+- **Test Coverage**: Order tracking, repair services, dealer connections, and recommendations
 
-We welcome contributions to enhance the Car Advisor Agent:
+## 🎨 Use Cases
 
-1. **Data Sources**: Add new automotive data providers
-2. **Tools**: Develop specialized analysis tools
-3. **Features**: Implement new capabilities
-4. **Optimization**: Improve performance and accuracy
+### **For Individual Buyers**
+- First-time car buyers seeking comprehensive guidance
+- Experienced buyers looking for market insights and best deals
+- Users needing repair services and maintenance support
+- Customers tracking orders and deliveries
+
+### **For Automotive Professionals**
+- Sales representatives seeking market intelligence
+- Service advisors coordinating customer needs
+- Fleet managers optimizing vehicle selections
+- Dealers enhancing customer service capabilities
+
+## 🔍 Advanced Features
+
+### **Multi-Phase Workflow**
+- Systematic approach to automotive consultation
+- Context-aware conversation management
+- Intelligent task routing and coordination
+- Personalized experience adaptation
+
+### **Real-Time Integration**
+- Live inventory and pricing updates
+- Current manufacturer incentives and rebates
+- Market trend analysis and forecasting
+- Dealer availability and service scheduling
+
+### **Intelligent Assistance**
+- Natural language understanding for automotive queries
+- Context-aware recommendations and guidance
+- Automated troubleshooting and problem resolution
+- Comprehensive follow-up and support coordination
 
 ## 📄 License
 
@@ -209,10 +255,10 @@ This project is part of the Arklex.AI framework. Please refer to the main framew
 ## 🆘 Support
 
 For support and questions:
-- Framework documentation: Arklex.AI docs
+- Framework documentation: Arklex.AI documentation
 - Issues: GitHub issues tracker
 - Community: Arklex.AI community forums
 
 ---
 
-**Built with ❤️ using Arklex.AI Framework - Empowering the future of automotive intelligence**
+**Built with ❤️ using Arklex.AI Framework - Your Complete Automotive Intelligence Solution**
